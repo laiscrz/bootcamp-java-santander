@@ -11,3 +11,6 @@ O repositório está organizado em pastas por assuntos principais do bootcamp. C
 
 - Projetos e desafios introdutórios em Java, cobrindo desde o ambiente de desenvolvimento até estruturas de controle e exceções.
 - Acesse à pasta : [Java Basic](JavaBasic)
+
+----------------------------
+> Este repositório tem como objetivo documentar os projetos desenvolvidos durante o bootcamp para o qual fui selecionada, em parceria com o Santander. Durante o curso, explorarei uma ampla gama de atividades para aprofundar meus conhecimentos em Java e suas aplicações, abrangendo desde conceitos fundamentais até técnicas avançadas com frameworks.atividades para aprofundar meus conhecimentos em Java e suas aplicações.
