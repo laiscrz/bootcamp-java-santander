@@ -1,5 +1,4 @@
-package edu.dio.vii;
-
+package edu.dio.vi;
 public class PatternComponent {
 
     public static void main(String[] args) {
