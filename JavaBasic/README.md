@@ -39,3 +39,7 @@ Este repositório contém informações essenciais sobre o estudo de Java Básic
 
 ### **2. Criando um projeto par validação de Processos Seletivos 📋**
 - ***Descrição:*** Criação de um sistema que deverá receber dois parâmetros via terminal que representarão dois números inteiros.
+
+-------------------------------------
+
+> Todos os cursos acima são oferecidos pela Digital Innovation One (DIO) através do Bootcamp Santander.
