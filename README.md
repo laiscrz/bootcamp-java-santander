@@ -28,5 +28,18 @@ O repositório está organizado em pastas por assuntos principais do bootcamp. C
 - Desenvolvimento de APIs RESTful com Spring Boot, integração de segurança com Spring Security, padrões de projeto (Design Patterns) e publicação de APIs na nuvem.
 - Acesse à pasta :
 
+## 💻 Tecnologias
+
+As seguintes ferramentas foram usadas neste projeto:
+
+### 🖥️ Ambientes de Desenvolvimento Integrado (IDEs):
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Eclipse IDE](https://img.shields.io/badge/Eclipse%20IDE-2C2255.svg?style=for-the-badge&logo=eclipse&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-0A0A2A.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+
+
+### 📚 Linguagem de Programação:
+![Java](https://img.shields.io/badge/Java-007396.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
 ----------------------------
 > Este repositório tem como objetivo documentar os projetos desenvolvidos durante o bootcamp para o qual fui selecionada, em parceria com o Santander. Durante o curso, explorarei uma ampla gama de atividades para aprofundar meus conhecimentos em Java e suas aplicações, abrangendo desde conceitos fundamentais até técnicas avançadas com frameworks.atividades para aprofundar meus conhecimentos em Java e suas aplicações.
