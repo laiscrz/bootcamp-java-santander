@@ -32,5 +32,6 @@ public class DeclarationVariableMethods {
     public static String nomeCompleto(String primeiroNome, String segundoNome) {
 
         return "Resultado: " + primeiroNome.concat(" ").concat(segundoNome);
+        
     }
 }

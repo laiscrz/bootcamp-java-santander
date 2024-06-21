@@ -11,6 +11,7 @@ public class IdentationNewsletterStudent {
             System.out.println("EXAME");
         else
             System.out.println("APROVADO");
+            
 
     }
 }

@@ -5,6 +5,7 @@ public class MyClass {
 
     // Main method - necessário se a classe for executável
     public static void main(String[] args) {
+        
         // public: Modificador de acesso, indica que o método pode ser acessado de fora
         // da classe.
         // static: Método pertence à classe em si e não a instâncias específicas da
