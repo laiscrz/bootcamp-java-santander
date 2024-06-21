@@ -42,4 +42,4 @@ Este repositório contém informações essenciais sobre o estudo de Java Básic
 
 -------------------------------------
 
-> Todos os cursos acima são oferecidos pela Digital Innovation One (DIO) através do Bootcamp Santander.
+> Todos os cursos acima são oferecidos pela Digital Innovation One (DIO) através do Bootcamp Santander Backend em Java.
