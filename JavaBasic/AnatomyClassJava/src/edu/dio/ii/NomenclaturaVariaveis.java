@@ -1,3 +1,4 @@
+package edu.dio.ii;
 
 public class NomenclaturaVariaveis {
 

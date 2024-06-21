@@ -1,3 +1,4 @@
+package edu.dio.iv;
 
 public class IdentationNewsletterStudent {
 

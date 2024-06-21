@@ -1,3 +1,5 @@
+package edu.dio.i;
+
 // Nome da classe deve começar com letra maiúscula e seguir o padrão CamelCase
 public class MyClass {
 

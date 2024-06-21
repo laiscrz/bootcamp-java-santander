@@ -1,3 +1,4 @@
+package edu.dio.iii;
 
 public class DeclarationVariableMethods {
 
