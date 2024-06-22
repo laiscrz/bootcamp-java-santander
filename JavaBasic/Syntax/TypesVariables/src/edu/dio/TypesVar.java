@@ -19,11 +19,11 @@ public class TypesVar {
         System.out.println("short: " + s);
 
         // Tipo long
-        long l = 100000L;
+        long l = 100000L; // encerrar com L
         System.out.println("long: " + l);
 
         // Tipo float
-        float f = 12.34f;
+        float f = 12.34f; // encerrar com f
         System.out.println("float: " + f);
 
         // Tipo double
