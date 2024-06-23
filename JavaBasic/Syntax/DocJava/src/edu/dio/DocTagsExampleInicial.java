@@ -16,13 +16,13 @@ public class DocTagsExampleInicial {
     /**
      * Este método é utilizado para exibir nome
      * 
-     * @param nome   este é o primeiro parâmetro do método
+     * @param nome      este é o primeiro parâmetro do método
      * @param sobrenome este é o segundo parâmetro do método
-     * @return String o resultado deste método é a concatenação que resulta no nom completo.
+     * @return String o resultado deste método é a concatenação que resulta no nom
+     *         completo.
      */
-    public String exibir( String nome, String sobrenome) {
+    public String exibir(String nome, String sobrenome) {
         return nome + " " + sobrenome;
     }
 
-    
 }
