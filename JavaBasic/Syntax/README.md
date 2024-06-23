@@ -10,15 +10,19 @@
 
 ### 🔠 Tipos e Variáveis
 - Diferentes tipos de dados em Java, como primitivos e objetos, e como declarar e usar variáveis.
+- Acesse o projeto: [Link para o Projeto de Tipos e Variáveis](TypesVariables)
 
 ### ➕ Operadores
 - Operadores atribuição, aritméticos, lógicos, ternário, e de relacionais e como usá-los em expressões.
+- Acesse o projeto: [Link para o Projeto de Operadores](Operators)
 
 ### 🛠️ Métodos
 - Definição e chamada de métodos, parâmetros e valores de retorno.
+- Acesse o projeto: [Link para o Projeto de Métodos](Methods)
 
 ### 🌐 Escopo de Código
 - Entendimento do escopo de variáveis, métodos e classes em Java.
+- Acesse o projeto: [Link para o Projeto de Escopo de Código](CodeScope)
 
 ### 🛑 Palavras Reservadas
 
