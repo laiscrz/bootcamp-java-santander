@@ -1,4 +1,3 @@
-package edu.dio;
 
 public class TestConditional {
     public static void main(String[] args) {
