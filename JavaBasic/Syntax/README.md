@@ -38,7 +38,8 @@
 
 ### 📄 Java Doc
 - Como documentar o código usando JavaDoc, gerando documentação automática.
-- Acesse o projeto: [Link para o Projeto de Java Doc]()
+- Acesse a Doc: [Documentação de uma das principais classes da linguagem Java](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+- Acesse o projeto: [Link para o Projeto de Java Doc](DocJava)
 
 ### 💻 Terminal e Argumentos
 - Uso do terminal para compilar e executar programas Java, e como passar argumentos para o programa.
