@@ -6,12 +6,12 @@
 
 ## Tipos de Estruturas Condicionais
 - Conhecendo as estruturas condicionais.
-- Acesse o projeto: [Link para o Projeto de ]()
+- Acesse o projeto: [Link para o Projeto de Projeto](TypeFluxControl)
 - Exemplo de sintaxe:
 
 ## Condicional Simples 🎯
 - Estrutura condicional que executa um bloco de código se uma condição for verdadeira.
-- Acesse o projeto: [Link para o Projeto de ]()
+- Acesse o projeto: [Link para o classe de Condicional Simples](TypeFluxControl/src/ConditionalSimple.java)
 - Exemplo de sintaxe:
 
   
