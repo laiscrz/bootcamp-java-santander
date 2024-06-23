@@ -5,7 +5,9 @@
             "type": "java",
             "request": "launch",
             "mainClass": "AboutMe",
-            "args": ["João", "Silva", "28", "1.58"]
+            "args": ["João", "Silva", "28", "1.58"],
+            "description": "Configuração para iniciar a aplicação 'AboutMe', exemplo de arquivo presente na .vscode/."
         }
+
     ]
 }
