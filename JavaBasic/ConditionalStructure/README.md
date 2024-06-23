@@ -4,35 +4,35 @@
 
 ## 📚 Projetos e Assunto das Aulas
 
-## Tipos de Estruturas Condicionais
+### Tipos de Estruturas Condicionais
 - Conhecendo as estruturas condicionais.
 - Acesse o projeto: [Link para o Projeto de Projeto](TypeFluxControl)
 - Exemplo de sintaxe:
 
-## Condicional Simples 🎯
+### Condicional Simples 🎯
 - Estrutura condicional que executa um bloco de código se uma condição for verdadeira.
-- Acesse o projeto: [Link para o classe de Condicional Simples](TypeFluxControl/src/ConditionalSimple.java)
+- Acesse o projeto: [Link para o classe do Projeto sobre Condicional Simples](TypeFluxControl/src/ConditionalSimple.java)
 - Exemplo de sintaxe:
 
   
-## Condicional Composta 🔄
+### Condicional Composta 🔄
 - Estrutura condicional que executa um bloco de código se uma condição for verdadeira e outro bloco se for falsa.
-- Acesse o projeto: [Link para o Projeto de ]()
+- Acesse o projeto: [Link para o classe do Projeto sobre Condicional Composta](TypeFluxControl/src/ConditionalCompound.java)
 - Exemplo de sintaxe:
 
-## Condicional Encadeada 🔗
+### Condicional Encadeada 🔗
 - Estrutura condicional que encadeia várias condições, executando diferentes blocos de código conforme cada condição.
-- Acesse o projeto: [Link para o Projeto de ]()
+- Acesse o projeto: [Link para o classe do Projeto sobre Condicional Encadeada](TypeFluxControl/src/ConditionalChained.java)
 - Exemplo de sintaxe:
 
-## Condicional Ternária ➡️
+### Condicional Ternária ➡️
 - Operador condicional que atribui um valor a uma variável com base em uma condição booleana.
-- Acesse o projeto: [Link para o Projeto de ]()
+- Acesse o projeto: [Link para o classe do Projeto sobre Condicional Ternaria](TypeFluxControl/src/ConditionalTernary.java)
 - Exemplo de sintaxe:
 
-## Switch Case 🔁
+### Switch Case 🔁
 - Estrutura condicional que permite avaliar uma variável ou expressão com várias opções diferentes.
-- Acesse o projeto: [Link para o Projeto de ]()
+- Acesse o projeto: [Link para o classe do Projeto sobre Condicional Switch Case](TypeFluxControl/src/ConditionalSwitchCase.java)
 - Exemplo de sintaxe:
 
 
