@@ -34,7 +34,7 @@
 
 ### 🛑 Palavras Reservadas
 - Sobre o uso de palavras reservadas na linguagem Java.
-- Acesse o projeto: [Link para o Projeto de Palavras Reservadas]()
+- Acesse o Link: [Link para o site de apoio sobre a Lista de Palavras Reservadas](https://glysns.gitbook.io/java-basico/sintaxe/palavras-reservadas)
 
 ### 📄 Java Doc
 - Como documentar o código usando JavaDoc, gerando documentação automática.
