@@ -18,7 +18,7 @@
 
 ### 🛠️ Métodos
 - Definição e chamada de métodos, parâmetros e valores de retorno.
-- Acesse o projeto: [Link para o Projeto de Métodos](Methods)
+- Acesse o projeto: [Link para o Projeto de Métodos](MethodsJava)
 
 ### 📺 Exemplo de SmartTV
 - O exercício é realizar um projeto que represente um exemplo de uma classe para representar uma SmartTV onde:
@@ -33,11 +33,17 @@
 - Acesse o projeto: [Link para o Projeto de Escopo de Código](CodeScope)
 
 ### 🛑 Palavras Reservadas
+- Sobre o uso de palavras reservadas na linguagem Java.
+- Acesse o projeto: [Link para o Projeto de Palavras Reservadas]()
 
 ### 📄 Java Doc
-
+- Como documentar o código usando JavaDoc, gerando documentação automática.
+- Acesse o projeto: [Link para o Projeto de Java Doc]()
 
 ### 💻 Terminal e Argumentos
+- Uso do terminal para compilar e executar programas Java, e como passar argumentos para o programa.
+- Acesse o projeto: [Link para o Projeto de Terminal e Argumentos]()
+
 
 --------------------------------
 > Este README descreve os tópicos de Sintaxe Java abordados nas aulas do Bootcamp Santander da DIO, proporcionando um guia prático e teórico para quem está iniciando no aprendizado desta linguagem de programação.
