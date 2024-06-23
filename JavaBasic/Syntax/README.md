@@ -5,14 +5,20 @@
 ## 📚 Projetos e Assunto das Aulas
 
 ### 🏛️ Anatomia de Classe
+- Estrutura básica de uma classe Java, incluindo declaração, atributos e métodos.
+- Acesse o projeto: [Link para o Projeto de Anatomia de Classe](AnatomyClassJava)
 
 ### 🔠 Tipos e Variáveis
+- Diferentes tipos de dados em Java, como primitivos e objetos, e como declarar e usar variáveis.
 
 ### ➕ Operadores
+- Operadores atribuição, aritméticos, lógicos, ternário, e de relacionais e como usá-los em expressões.
 
 ### 🛠️ Métodos
+- Definição e chamada de métodos, parâmetros e valores de retorno.
 
 ### 🌐 Escopo de Código
+- Entendimento do escopo de variáveis, métodos e classes em Java.
 
 ### 🛑 Palavras Reservadas
 
