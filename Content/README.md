@@ -1,7 +1,9 @@
-# Conteúdo do Bootcamp Backend em Java 
+# Conteúdo do Bootcamp Backend em Java 🔖
 
-## Estrutura do Repositório 📂
-O repositório está organizado em pastas por assuntos principais do bootcamp. Cada pasta contém os códigos e documentações dos projetos e desafios correspondentes aos temas abordados. Abaixo está a estrutura detalhada:
+> Este README.md contém detalhes sobre a estrutura da pasta que contém os conteúdos e projetos feitos durante as aulas.
+
+## Estrutura da pasta de Contéudo ( `Content` ) 📂
+A pasta `Content` está organizado em pastas por assuntos/conteúdo principais do bootcamp. Cada pasta contém os códigos e documentações dos projetos e desafios correspondentes aos temas abordados. Abaixo está a estrutura detalhada:
 
 ### Java Básico 📚
 
@@ -23,3 +25,6 @@ O repositório está organizado em pastas por assuntos principais do bootcamp. C
 ### Spring Framework 🌱
 - Desenvolvimento de APIs RESTful com Spring Boot, integração de segurança com Spring Security, padrões de projeto (Design Patterns) e publicação de APIs na nuvem.
 - Acesse à pasta :
+
+-------------------------
+> Este README.md serve como guia para explorar e acessar os conteúdos desenvolvidos ao longo do bootcamp, destacando a aplicação prática de cada tema abordado.
