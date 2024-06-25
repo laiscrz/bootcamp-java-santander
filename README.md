@@ -27,6 +27,7 @@ As seguintes ferramentas foram usadas neste projeto:
 ### 📚 Linguagem de Programação:
 ![Java](https://img.shields.io/badge/Java-007396.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
+
 ## 📌 Como Usar
 
 1. Clone o repositório usando o seguinte comando no terminal:
@@ -41,6 +42,11 @@ As seguintes ferramentas foram usadas neste projeto:
     ```
 3. Explore as pastas correspondentes a cada dia do desafio para ver detalhes sobre as atividades realizadas em cada dia.
 4. Fique à vontade para abrir o projeto em sua IDE preferida e experimentar o código por conta própria!
+
+## 📜 Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
 
 ----------------------------
 > Este repositório tem como objetivo documentar os projetos desenvolvidos durante o bootcamp para o qual fui selecionada, em parceria com o Santander. Durante o curso, explorarei uma ampla gama de atividades para aprofundar meus conhecimentos em Java e suas aplicações, abrangendo desde conceitos fundamentais até técnicas avançadas com frameworks.atividades para aprofundar meus conhecimentos em Java e suas aplicações.
