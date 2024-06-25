@@ -1,6 +1,6 @@
 # Sintaxe - Desafio - Projeto ContaBanco 💳
 
-Este projeto tem como objetivo exercitar o conteúdo de sintaxe de Java, simulando a criação de uma conta bancária via terminal.
+> Este desafio de projeto tem como objetivo exercitar o conteúdo de sintaxe de Java, simulando a criação de uma conta bancária via terminal.
 
 ## Objetivo 🎯
 ### 1. Criação do Projeto ContaBanco (`BankAccount`):
