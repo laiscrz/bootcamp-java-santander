@@ -13,7 +13,7 @@ A pasta `Content` contém os materiais de aprendizado do bootcamp, organizados p
 
 ### Desafios (pasta `Challenges`) 📂
 A pasta `Challenges` contém os desafios propostos durante o bootcamp:
-- `Desafio1/`: Descrição e código do Desafio 1.
+- [`JavaBasicChallenges/`](Challenges/JavaBasicChallenges): Desafios sobre básico de Java.
 
 ## 💻 Tecnologias
 
