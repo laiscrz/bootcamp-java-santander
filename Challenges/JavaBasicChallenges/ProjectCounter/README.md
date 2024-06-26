@@ -12,21 +12,27 @@
 - Se o primeiro número for maior que o segundo, lançar uma exceção customizada chamada `InvalidParametersException` com a mensagem: "O segundo parâmetro deve ser maior que o primeiro".
 
 ## Exemplo de Execução 🖥️
-Se você passar os números 12 e 30, o programa deverá imprimir:
+Se você passar os números 6 e 12, o programa deverá imprimir:
 ```sh
 Imprimindo o número 1
 Imprimindo o número 2
-...
-Imprimindo o número 19
-Imprimindo o número 20
-Imprimindo o número 21
-...
-Imprimindo o número 30
+Imprimindo o número 3
+Imprimindo o número 4
+Imprimindo o número 5
+Imprimindo o número 6
 ```
 
 ## Como Executar o Projeto ▶️
 1. Certifique-se de ter o Java instalado na sua máquina.
+2. Abra o terminal e navegue até o diretório onde o projeto está localizado.
+3. Compile o código Java.
+4. Execute o programa utilizando o comando:
 
+    ```sh
+    java br.com.dio.Counter
+    ```
+5. Exemplo da demostração no terminal:
+<p align="center"><img src="doc/terminalDemo.png" alt="Print Terminal" width="700" height="320" ></p>
 
 --------------------------------------------
 > Pronto! Agora você pode interagir com o programa, testar diferentes entradas e observar o tratamento de exceções. 🎊
