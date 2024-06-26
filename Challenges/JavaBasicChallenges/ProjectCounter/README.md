@@ -13,7 +13,7 @@
 
 ## Exemplo de Execução 🖥️
 Se você passar os números 6 e 12, o programa deverá imprimir:
-```sh
+```yaml
 Imprimindo o número 1
 Imprimindo o número 2
 Imprimindo o número 3
