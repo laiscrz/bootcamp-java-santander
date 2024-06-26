@@ -32,7 +32,7 @@ Imprimindo o número 6
     java br.com.dio.Counter
     ```
 5. Exemplo da demostração no terminal:
-<p align="center"><img src="doc/terminalDemo.png" alt="Print Terminal" width="700" height="320" ></p>
+<p align="center"><img src="doc/terminalDemoCounter.png" alt="Print Terminal" width="500" height="320" ></p>
 
 --------------------------------------------
 > Pronto! Agora você pode interagir com o programa, testar diferentes entradas e observar o tratamento de exceções. 🎊
