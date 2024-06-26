@@ -44,11 +44,13 @@ Sua agência é 067-8, conta 1021 e seu saldo R$ 246,88 já está disponível pa
 2. Crie abra o projeto `BankAccount` e localize `AccountTerminal.java`.
 3. Abra o terminal, navegue até o diretório `BankAccount` e compile o arquivo.
 4. Após a compilação, execute o programa com o comando:
-```bash
-java AccountTerminal
-```
+
+   ```bash
+    java AccountTerminal
+    ```
 5. Exemplo da demostração no terminal:
-<p align="center"><img src="doc/terminalDemo.png" alt="Diagrama de Classes" width="700" height="320" ></p>
+   
+<p align="center"><img src="doc/terminalDemo.png" alt="Print Terminal" width="700" height="320" ></p>
 
 -----------------------------------
 > Pronto! Agora você pode interagir com o programa e simular a criação de uma conta bancária de maneira mais amigável e visualmente agradável. 🎊
