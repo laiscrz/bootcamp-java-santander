@@ -1,6 +1,6 @@
-package br.com.dio.cases.i;
+package br.com.dio;
 
-public class ProcessSelective {
+public class ProcessSelectiveI {
 
     // Constante do Salario Base
     private static final double SALARIO_BASE = 2000.00;
