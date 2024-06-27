@@ -1,4 +1,4 @@
-package br.com.dio.lanchonete;
+package br.com.dio.lanchonete.atendimento;
 
 public class Atendente {
     public void servindoMesa() {
@@ -14,7 +14,7 @@ public class Atendente {
         System.out.println("RECEBENDO PAGAMENTO");
     }
 
-    public void trocarGas() {
+    void trocarGas() {
         System.out.println("ATENDENTE TROCANDO O GÁS");
     }
 

@@ -1,6 +1,11 @@
 package br.com.dio.lanchonete;
 
-public class MainEstabelecimento {
+import br.com.dio.lanchonete.area.cliente.Cliente;
+import br.com.dio.lanchonete.atendimento.Atendente;
+import br.com.dio.lanchonete.atendimento.cozinha.Almoxarife;
+import br.com.dio.lanchonete.atendimento.cozinha.Cozinheiro;
+
+public class Estabelecimento {
     public static void main(String[] args) {
         System.out.println("---------Cozinheiro---------");
         Cozinheiro cozinheiro = new Cozinheiro();
@@ -23,8 +28,8 @@ public class MainEstabelecimento {
         almoxarife.controlarEntrada();
         almoxarife.controlarSaida();
         // ação que somente o seu pacote cozinha precisa conhecer (default)
-        almoxarife.entregarIngredientes();
-        almoxarife.trocarGas();
+        // almoxarife.entregarIngredientes();
+        // almoxarife.trocarGas();
 
         System.out.println("---------Atendente---------");
         Atendente atendente = new Atendente();
@@ -32,7 +37,7 @@ public class MainEstabelecimento {
         atendente.receberPagamento();
         atendente.servindoMesa();
         // ação que somente o seu pacote cozinha precisa conhecer (default)
-        atendente.trocarGas();
+        // atendente.trocarGas();
 
         System.out.println("---------Cliente---------");
         Cliente cliente = new Cliente();
@@ -48,7 +53,7 @@ public class MainEstabelecimento {
         cliente.consultarSaldoAplicativo();
 
         // já pensou os clientes ouvindo que o gás acabou ?
-        cozinheiro.pedirParaTrocarGas(atendente);
+        // cozinheiro.pedirParaTrocarGas(atendente);
         cozinheiro.pedirParaTrocarGas(almoxarife);
 
     }

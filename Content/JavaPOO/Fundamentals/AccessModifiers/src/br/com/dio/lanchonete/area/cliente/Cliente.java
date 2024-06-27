@@ -1,4 +1,4 @@
-package br.com.dio.lanchonete;
+package br.com.dio.lanchonete.area.cliente;
 
 public class Cliente {
     public void escolherLanche() {
