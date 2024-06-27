@@ -47,7 +47,7 @@ A composição caracteriza uma dependência existencial entre a classe principal
 
 - **Admissão** é a classe principal e **Candidato** compõe a Admissão, logo existe uma composição entre Admissão e Colaborador.
 
-<p align="center"><img src="docs/composicao.png" alt="Ilustração de Diagrama" width="500" height="300" ></p>
+<p align="center"><img src="docs/composicao.png" alt="Ilustração de Diagrama" width="520" height="320" ></p>
 
 ## Multiplicidade 🔢
 
@@ -67,7 +67,7 @@ Os atributos e métodos de uma classe podem receber níveis de visibilidade, e n
 
 ## Representação 🖼️
 
-<p align="center"><img src="docs/representacao.png" alt="Ilustração de Diagrama" width="500" height="300" ></p>
+<p align="center"><img src="docs/representacao.png" alt="Ilustração de Diagrama" width="540" height="320" ></p>
 
 ## Ferramentas de Modelagem UML 🛠️
 
@@ -81,4 +81,3 @@ Existem diversas ferramentas populares para criar diagramas UML, incluindo:
     - [Site do Lucidchart](https://www.lucidchart.com/)
 - **StarUML**: Ferramenta de modelagem UML moderna e de código aberto, adequada para diversos tipos de projeto de software.
     - [Site do StarUML](http://staruml.io/)
-
