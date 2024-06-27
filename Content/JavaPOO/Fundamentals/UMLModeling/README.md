@@ -62,3 +62,17 @@ Os atributos e métodos de uma classe podem receber níveis de visibilidade, e n
 ## Representação 🖼️
 
 Ilustração utilizando a ferramenta Astah Community.
+
+## Ferramentas de Modelagem UML 🛠️
+
+Existem diversas ferramentas populares para criar diagramas UML, incluindo:
+
+- **Astah**: Ferramenta robusta para modelagem UML que suporta uma ampla variedade de diagramas.
+    - [Site do Astah](https://astah.net/)
+- **draw.io**: Ferramenta de diagramação online gratuita que inclui suporte para diagramas UML.
+    - [Site do draw.io](https://draw.io/)
+- **Lucidchart**: Plataforma de diagramação colaborativa que oferece recursos avançados para criação de diagramas UML.
+    - [Site do Lucidchart](https://www.lucidchart.com/)
+- **StarUML**: Ferramenta de modelagem UML moderna e de código aberto, adequada para diversos tipos de projeto de software.
+    - [Site do StarUML](http://staruml.io/)
+
