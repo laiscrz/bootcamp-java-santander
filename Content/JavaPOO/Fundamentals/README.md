@@ -30,7 +30,7 @@
 
 ### UML 📝
 - Modelagem de classes e suas relações utilizando UML.
-- Acesse o projeto: [Link para o Projeto de UML]()
+- Acesse o projeto: [Link para o Projeto de UML](UMLModeling)
 
 --------------------------------
 > Este README descreve os tópicos de Fundamentos de POO em Java abordados nas aulas do Bootcamp Santander da DIO, proporcionando um guia prático e teórico para quem está iniciando no aprendizado desta linguagem de programação.
