@@ -1,7 +1,5 @@
 package br.com.dio.lanchonete.atendimento.cozinha;
 
-import br.com.dio.lanchonete.atendimento.Atendente;
-
 public class Cozinheiro {
 
     // pode ser default
