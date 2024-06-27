@@ -33,15 +33,21 @@ Em diagrama, a estrutura das classes é constituída por:
 ### Associação 🔗
 Uma associação define um relacionamento entre duas classes, permitindo que um objeto tenha acesso à estrutura de um outro objeto.
 
+<p align="center"><img src="docs/associacoes.png" alt="Ilustração de Diagrama" width="500" height="300" ></p>
+
 ### Agregação 🧱
 Em uma agregação, a classe principal contém uma relação com outra classe, mas ela pode existir sem a classe agregadora. Imagine um cadastro de Candidatos, podemos encontrar candidatos que ainda não possuam uma profissão:
 
 - **Candidato** é a classe principal e a **Profissão** é a agregação.
 
+<p align="center"><img src="docs/agregacao.png" alt="Ilustração de Diagrama" width="500" height="300" ></p>
+
 ### Composição ⚙️
 A composição caracteriza uma dependência existencial entre a classe principal e a classe associada. Imagine que uma admissão só poderá existir contendo suas informações básicas e a composição do candidato selecionado:
 
 - **Admissão** é a classe principal e **Candidato** compõe a Admissão, logo existe uma composição entre Admissão e Colaborador.
+
+<p align="center"><img src="docs/composicao.png" alt="Ilustração de Diagrama" width="500" height="300" ></p>
 
 ## Multiplicidade 🔢
 
@@ -61,7 +67,7 @@ Os atributos e métodos de uma classe podem receber níveis de visibilidade, e n
 
 ## Representação 🖼️
 
-Ilustração utilizando a ferramenta Astah Community.
+<p align="center"><img src="docs/representacao.png" alt="Ilustração de Diagrama" width="500" height="300" ></p>
 
 ## Ferramentas de Modelagem UML 🛠️
 
