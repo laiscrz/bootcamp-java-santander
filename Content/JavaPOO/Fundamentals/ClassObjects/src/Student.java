@@ -2,6 +2,7 @@
 
 public class Student {
 
+    // atributos
     String name;
     int age;
     String color;
