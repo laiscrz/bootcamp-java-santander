@@ -31,14 +31,6 @@ Este repositório contém informações essenciais sobre o estudo de Java Básic
 - ***Descrição:*** Técnicas de depuração em Java para identificar e corrigir erros no código, utilizando ferramentas de debugging fornecidas pelas IDEs.
 - Acesse em : [Pasta 'Debbuging'](Debbuging)
 
-### **7. Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional 🧠**
-- ***Descrição:*** Conjunto de desafios de código projetados para melhorar a lógica de programação e o pensamento computacional.
-- Acesse em : [Pasta ' ']()
-
-### **8. Condições, Loops e Exceções na Prática com Java 🧪**
-- ***Descrição:*** Aplicação prática dos conceitos de condições, loops e tratamento de exceções em projetos e exercícios para solidificar o entendimento.
-- Acesse em : [Pasta ' ']()
-
 ## Desafios de Projetos Proposto 🧩
 
 ### **1. Simulando Uma Conta Bancária Através do Terminal/Console 💳**
