@@ -1,9 +1,4 @@
-package br.com.dio.lanchonete.main;
-
-import br.com.dio.lanchonete.model.Almoxarife;
-import br.com.dio.lanchonete.model.Atendente;
-import br.com.dio.lanchonete.model.Cliente;
-import br.com.dio.lanchonete.model.Cozinheiro;
+package br.com.dio.lanchonete;
 
 public class MainEstabelecimento {
     public static void main(String[] args) {
