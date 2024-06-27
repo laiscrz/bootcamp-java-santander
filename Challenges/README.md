@@ -11,7 +11,7 @@ Esta pasta contém todos os desafios de projetos propostos durante o módulo de 
 
 ### Desafios de Projeto - Programação Orientada a Objetos com Java 🎯
 Esta pasta contém desafios de projetos focados na aplicação de conceitos de Programação Orientada a Objetos (POO) com Java. Os projetos abordam temas como herança, polimorfismo, encapsulamento e abstração.
-- Acesse a pasta: [Programação Orientada a Objetos com Java - Challenges](POOJavaChallenges)
+- Acesse a pasta: [Programação Orientada a Objetos com Java - Challenges](JavaPOOChallenges)
 
 ### Desafios de Projeto - Testes e Gerenciamento de Dependências 🧪
 Esta pasta contém desafios de projetos que envolvem a criação e execução de testes automatizados, além do gerenciamento de dependências utilizando ferramentas como JUnit e Maven.
