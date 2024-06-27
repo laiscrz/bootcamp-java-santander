@@ -15,7 +15,12 @@ O objetivo é fornecer um guia claro e conciso sobre os desafios dos conceitos f
 
 ### **2. Criando um projeto par validação de Processos Seletivos 📋**
 - ***Descrição:*** Criação de um sistema que deverá receber dois parâmetros via terminal que representarão dois números inteiros.
-- - Acesse o desafio: 
+- Acesse o desafio: [ProjectCounter](ProjectCounter)
 
+### **3. Exercicios Implementados 🧩**
+
+#### Projeto sobre Processo Seletivo 📑
+- ***Descrição:*** Criação de um sistema que simula um processo seletivo, onde candidatos são avaliados com base no salário pretendido e são realizados contatos para possíveis entrevistas.
+- Acesse o exercicio: [ProjectProcessSelective](ProjectProcessSelective)
 ---------------------------
 > Todos os desafios acima são oferecidos pela Digital Innovation One (DIO) através do Bootcamp Santander Backend em Java.
