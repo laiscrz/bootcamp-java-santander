@@ -1,6 +1,6 @@
 package br.com.dio;
 
-public class Facebook extends MessageService {
+public class Facebook extends ServiceMessageInstant {
     
     @Override
     public void enviarMensagem() {

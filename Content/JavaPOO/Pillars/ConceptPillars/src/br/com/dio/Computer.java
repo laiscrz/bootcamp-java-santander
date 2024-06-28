@@ -6,7 +6,7 @@ public class Computer {
 
 	public static void main(String[] args) {
 
-		MessageService sm = null;
+		ServiceMessageInstant sm = null;
 
 		/*
 		 * NÃO SE SABE QUAL APP

@@ -1,6 +1,6 @@
 package br.com.dio;
 
-public abstract class MessageService {
+public abstract class ServiceMessageInstant {
 
     public abstract void enviarMensagem(); // não tem corpo
 

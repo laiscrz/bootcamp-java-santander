@@ -1,6 +1,6 @@
 package br.com.dio;
 
-public class Telegram extends MessageService{
+public class Telegram extends ServiceMessageInstant{
 
     @Override
     public void enviarMensagem() {
