@@ -4,7 +4,7 @@ public class Computer {
 
     public static void main(String[] args) {
         
-		System.out.println("----------MSN----------");
+		System.out.println("\n----------MSN----------");
         //abrindo MSN Messenger
 		MSNMessenger msn = new MSNMessenger();
 		// msn.validarConectadoInternet(); -> private (Encapsulamento)
@@ -12,12 +12,12 @@ public class Computer {
 		// msn.salvarHistoricoMensagem(); -> private (Encapsulamento)
 		msn.receberMensagem();
 
-		System.out.println("----------FACEBOOK----------");
+		System.out.println("\n----------FACEBOOK----------");
 		Facebook fbm = new Facebook();
 		fbm.enviarMensagem();
 		fbm.receberMensagem();
 		
-		System.out.println("----------TELEGRAM----------");
+		System.out.println("\n----------TELEGRAM----------");
 		Telegram tlg = new Telegram();
 		tlg.enviarMensagem();
 		tlg.receberMensagem();
