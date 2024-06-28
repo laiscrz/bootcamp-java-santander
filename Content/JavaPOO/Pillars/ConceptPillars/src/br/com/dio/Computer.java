@@ -7,9 +7,9 @@ public class Computer {
         //abrindo MSN Messenger
 		MSNMessenger msn = new MSNMessenger();
 		
-		msn.validarConectadoInternet();
+		// msn.validarConectadoInternet(); -> private (Encapsulamento)
 		msn.enviarMensagem();
-		msn.salvarHistoricoMensagem();
+		// msn.salvarHistoricoMensagem(); -> private (Encapsulamento)
 		
 		msn.receberMensagem();
     }
