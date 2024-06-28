@@ -1,8 +1,9 @@
 package br.com.dio;
 
 public abstract class MessageService {
-    
+
     public abstract void enviarMensagem(); // não tem corpo
+
     public abstract void receberMensagem(); // não tem corpo
 
     // private -> Encapsulamento
@@ -15,12 +16,14 @@ public abstract class MessageService {
         System.out.println("Salvando o histórico da mensagem");
     }
 
-    // Métodos protegidos para permitir o uso nas subclasses
-     protected void validarEConectar() {
+    // protected -> somente filhos reconhecem
+    protected void enviar() {
         validarConectadoInternet();
+        System.out.println("Enviando mensagem");
+        salvarHistoricoMensagem();
     }
 
-    protected void salvarHistorico() {
-        salvarHistoricoMensagem();
+    protected void receber() {
+        System.out.println("Recebendo mensagem");
     }
 }
