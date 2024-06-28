@@ -1,15 +1,15 @@
 package br.com.dio;
 
-public class MSNMessenger {
+public class Telegram {
 
     public void enviarMensagem() {
         validarConectadoInternet();
-        System.out.println("Enviando mensagem com MSN");
+        System.out.println("Enviando mensagem com Telegram");
         salvarHistoricoMensagem();
     }
 
     public void receberMensagem() {
-        System.out.println("Recebendo mensagem com MSN");
+        System.out.println("Recebendo mensagem com Telegram");
     }
 
     // métodos privadas, visíveis somente na classe
