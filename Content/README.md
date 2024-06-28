@@ -8,11 +8,11 @@ A pasta `Content` está organizado em pastas por assuntos/conteúdo principais d
 ### Java Básico 📚
 
 - Projetos e desafios introdutórios em Java, cobrindo desde o ambiente de desenvolvimento até estruturas de controle e exceções. Para mais detalhes, consulte o site de apoio fornecido pelo instrutor do curso: [Java Basico no Gitbook](https://glysns.gitbook.io/java-basico)
-- Acesse à pasta com os códigos: [Java Basic](JavaBasic)
+- Acesse à pasta : [Java Basic](JavaBasic)
 
 ### Programação Orientada a Objetos com Java 🎯
 - Exercícios e projetos que exploram os pilares da programação orientada a objetos aplicados em Java, incluindo o uso de coleções e APIs de stream.
-- Acesse à pasta :
+- Acesse à pasta : [Java POO](JavaPOO)
 
 ### Testes e Gerenciamento de Dependências 🧪
 - Implementações de testes unitários com JUnit, práticas de desenvolvimento utilizando Mockito e gerenciamento de dependências com Maven.
