@@ -15,5 +15,12 @@ public abstract class MessageService {
         System.out.println("Salvando o histórico da mensagem");
     }
 
-    
+    // Métodos protegidos para permitir o uso nas subclasses
+     protected void validarEConectar() {
+        validarConectadoInternet();
+    }
+
+    protected void salvarHistorico() {
+        salvarHistoricoMensagem();
+    }
 }
