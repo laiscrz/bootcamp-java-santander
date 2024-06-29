@@ -7,9 +7,10 @@ public class GenericsExempleList {
 
     public static void main(String[] args) {
         // Exemplo sem Generics
-        List listaSemGenerics = new ArrayList();
+        /*List listaSemGenerics = new ArrayList();
         listaSemGenerics.add("Elemento 1");
         listaSemGenerics.add(10); // Permite adicionar qualquer tipo de objeto
+        */
 
         // Exemplo com Generics -> <Type>
         List<String> listaGenerics = new ArrayList<>();
@@ -22,10 +23,10 @@ public class GenericsExempleList {
         }
 
         // Iterando sobre a lista sem Generics (necessário fazer cast)
-        for (Object elemento : listaSemGenerics) {
+        /*for (Object elemento : listaSemGenerics) {
             String str = (String) elemento;
             System.out.println(str);
-        }
+        }*/
     }
 
 }
