@@ -13,9 +13,16 @@ public class AparelhoTelefonico extends DispositivoComunicacao {
         System.out.println("Atendendo chamada...");
     }
 
+    @Override
     public void encerrar() {
         System.out.println("Encerrando chamada...");
         System.out.println("Chamada encerrada.");
+    }
+
+    @Override
+    public void iniciarCorreioVoz() {
+        System.out.println("Iniciando correio de voz...");
+        System.out.println("Por favor, deixe sua mensagem após o sinal...");
     }
 
 }
