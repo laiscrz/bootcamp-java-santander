@@ -81,7 +81,7 @@ classDiagram
 
 ## Implementação (Opcional) 💻
 As classes e interfaces foram implementadas em Java e podem ser encontradas no diretório `src/br/com/iphone`.
-
+- Acesse em : [ProjectIPhoneModel](ProjectIPhoneModel)
 ## Referências 📚
 - Vídeo do lançamento do iPhone 2007 (minutos relevantes: 00:15 até 00:55).
 
