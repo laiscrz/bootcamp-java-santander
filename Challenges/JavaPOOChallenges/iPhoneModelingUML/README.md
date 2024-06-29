@@ -19,7 +19,63 @@
 - Opcionalmente, implementar as classes e interfaces correspondentes código em Java.
 
 ## Diagrama UML 🖼️
-![Diagrama UML]()
+
+```mermaid
+classDiagram
+    class Reprodutor {
+        + tocar()
+        + pausar()
+        + selecionarMusica(String musica)
+    }
+
+    class ReprodutorMusical {
+        implements Reprodutor
+        + tocar()
+        + pausar()
+        + selecionarMusica(String musica)
+    }
+
+    class DispositivoEletronico {
+        + ligar(String numero)
+        + atender()
+        + iniciarCorreioVoz()
+    }
+
+    class ComponenteWeb {
+        + exibirPagina(String url)
+        + adicionarNovaAba()
+        + atualizarPagina()
+    }
+
+    class NavegadorInternet {
+        extends ComponenteWeb
+        + exibirPagina(String url)
+        + adicionarNovaAba()
+        + atualizarPagina()
+    }
+
+    class AparelhoTelefonico {
+        extends DispositivoEletronico
+        + ligar(String numero)
+        + atender()
+        + iniciarCorreioVoz()
+    }
+
+    class iPhone {
+        + reprodutorMusical: ReprodutorMusical
+        + aparelhoTelefonico: AparelhoTelefonico
+        + navegadorInternet: NavegadorInternet
+        
+        + iniciar()
+    }
+
+    Reprodutor <|-- ReprodutorMusical
+    DispositivoEletronico <|-- AparelhoTelefonico
+    ComponenteWeb <|-- NavegadorInternet
+    iPhone *-- ReprodutorMusical
+    iPhone *-- AparelhoTelefonico
+    iPhone *-- NavegadorInternet
+```
 
 ## Implementação (Opcional) 💻
 As classes e interfaces foram implementadas em Java e podem ser encontradas no diretório `src/br/com/iphone`.
