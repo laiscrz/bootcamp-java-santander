@@ -35,7 +35,7 @@ classDiagram
         + selecionarMusica(String musica)
     }
 
-    class DispositivoEletronico {
+    class DispositivoComunicacao {
         + ligar(String numero)
         + atender()
         + iniciarCorreioVoz()
@@ -70,7 +70,7 @@ classDiagram
     }
 
     Reprodutor <|-- ReprodutorMusical
-    DispositivoEletronico <|-- AparelhoTelefonico
+    DispositivoComunicacao <|-- AparelhoTelefonico
     ComponenteWeb <|-- NavegadorInternet
     iPhone *-- ReprodutorMusical
     iPhone *-- AparelhoTelefonico
