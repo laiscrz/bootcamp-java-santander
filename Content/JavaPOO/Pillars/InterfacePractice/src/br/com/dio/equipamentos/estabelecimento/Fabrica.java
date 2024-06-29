@@ -35,7 +35,7 @@ public class Fabrica {
         Digitalizadora digitalizadoraMulti = multi;
         Copiadora copiadoraMulti = multi;
         impressoraMulti.imprimir();
-        digitalizadoraMulti.digitalizar();;
-        copiadoraMulti.copiar();;
+        digitalizadoraMulti.digitalizar();
+        copiadoraMulti.copiar();
     }
 }
