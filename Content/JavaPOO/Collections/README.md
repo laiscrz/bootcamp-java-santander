@@ -4,27 +4,29 @@
 
 ## 📚 Projetos e Assunto das Aulas
 
-### Conceito de Generics
+### Conceito de Generics 🔄
 - Estudo do conceito de generics em Java.
 - Acesse o projeto: [GenericsType](GenericsType)
 
-### Comparable e Comparator
+### Comparable e Comparator 📊
 - Comparação e diferenciação entre as interfaces Comparable e Comparator.
 - Acesse o projeto: [InterfacesComparableComparator](InterfacesComparableComparator)
 
-### Interfaces List
+### Interfaces List 📜
 - Estudo da interface List e suas implementações.
 - Acesse o projeto: [InterfacesList](InterfacesList)
 
-### Interfaces Set
+### Interfaces Set 🧩
 - Estudo da interface Set e suas implementações.
 - Acesse o projeto: [InterfacesSet](InterfacesSet)
 
-### Interfaces Map
+### Interfaces Map 🗺️
 - Estudo da interface Map e suas implementações.
 - Acesse o projeto: [InterfacesMap](InterfacesMap)
 
-### Diferenças entre List, Set e Map
+### Diferenças entre List, Set e Map 📊
+
+Aqui estão as principais diferenças entre as interfaces List, Set e Map no Java:
 
 | Característica      | List                            | Set                             | Map                             |
 |---------------------|---------------------------------|---------------------------------|---------------------------------|
@@ -33,3 +35,6 @@
 | **Acesso**          | Acesso por índice               | Acesso direto através de elementos | Acesso por chave               |
 | **Implementações**  | ArrayList, LinkedList, etc.     | HashSet, TreeSet, etc.         | HashMap, TreeMap, etc.         |
 | **Exemplo**         | `[1, 2, 3]`                     | `{1, 2, 3}`                    | `{ "chave1" -> "valor1", "chave2" -> "valor2" }` |
+
+---------------------------------
+> Este README descreve os tópicos de 'Collections' em Java abordados nas aulas do Bootcamp Santander da DIO, proporcionando um guia prático e teórico para quem está iniciando no aprendizado desta linguagem de programação.
