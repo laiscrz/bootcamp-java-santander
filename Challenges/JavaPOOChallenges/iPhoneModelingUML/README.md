@@ -38,6 +38,15 @@ classDiagram
     class DispositivoComunicacao {
         + ligar(String numero)
         + atender()
+        + encerrar()
+        + iniciarCorreioVoz()
+    }
+
+    class AparelhoTelefonico {
+        extends DispositivoEletronico
+        + ligar(String numero)
+        + atender()
+        + encerrar()
         + iniciarCorreioVoz()
     }
 
@@ -52,13 +61,6 @@ classDiagram
         + exibirPagina(String url)
         + adicionarNovaAba()
         + atualizarPagina()
-    }
-
-    class AparelhoTelefonico {
-        extends DispositivoEletronico
-        + ligar(String numero)
-        + atender()
-        + iniciarCorreioVoz()
     }
 
     class iPhone {
