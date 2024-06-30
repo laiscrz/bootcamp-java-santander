@@ -16,9 +16,9 @@ Este parte do repositório contém informações essenciais sobre o estudo de Ja
 - ***Descrição:*** Exploração dos pilares fundamentais da POO: Abstração, Encapsulamento, Herança e Polimorfismo.
 - Acesse em : [Pasta 'Pillars'](Pillars)
 
-### **3.Conhecendo Colletions 🗃️**
+### **3.Conhecendo Collections 🗃️**
 - ***Descrição:*** Estudo das principais interfaces e classes do framework Collections, como List, Set e Map.
--  Acesse em : [Pasta 'Colletions'](Colletions)
+-  Acesse em : [Pasta Collections'](Collections)
 
 ### **4. Ganhando Produtividade com Stream API ⏩**
 - ***Descrição:*** Uso da Stream API para processar coleções de forma mais eficiente e concisa.
