@@ -1,5 +1,5 @@
 package main.java.pesquisa;
 
-public class Convidado {
+public class Produto {
 
 }
