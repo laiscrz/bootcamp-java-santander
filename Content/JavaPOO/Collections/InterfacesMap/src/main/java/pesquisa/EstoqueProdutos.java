@@ -14,6 +14,15 @@ public class EstoqueProdutos {
         estoqueProdutosMap.put(cod, new Produto(nome, preco, quantidade));
     }
 
+    public void removerProduto(long cod) {
+        if (estoqueProdutosMap.containsKey(cod)) {
+            estoqueProdutosMap.remove(cod);
+            System.out.println("Produto removido com sucesso.");
+        } else {
+            System.out.println("Produto não encontrado.");
+        }
+    }
+
     public void exibirProdutos() {
         System.out.println(estoqueProdutosMap);
     }
@@ -80,6 +89,10 @@ public class EstoqueProdutos {
         estoque.adicionarProduto(4L, "Teclado", 2, 40.0);
 
         // Exibe os produtos no estoque
+        estoque.exibirProdutos();
+
+        // Remove um produto do estoque
+        estoque.removerProduto(2L);
         estoque.exibirProdutos();
 
         // Calcula e exibe o valor total do estoque
