@@ -1,4 +1,4 @@
-package main.java.ImperativeDeclarativeProgramming;
+package main.java.imperativeDeclarativeProgramming;
 
 import java.util.ArrayList;
 import java.util.List;
