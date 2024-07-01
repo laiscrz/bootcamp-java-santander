@@ -15,11 +15,11 @@
 
 ### Lambda Expressions ➡️
 - As expressões lambda permitem criar funções anônimas de forma concisa. Elas são uma parte central da programação funcional em Java, facilitando a manipulação de coleções e a implementação de interfaces funcionais.
-- Acesse sobre: [Lambda Expressions](ContextualizationStream/src//main/java/LambdaExpressions)
+- Acesse sobre: [Lambda Expressions](ContextualizationStream/src/main/java/LambdaExpressions/ExampleLambda.java)
 
 ### Method References 🔗
 - As referências a métodos são uma forma de simplificar ainda mais o uso de expressões lambda. Elas permitem referenciar métodos diretamente por seus nomes, tornando o código mais claro e fácil de ler.
-- Acesse sobre: [Method References](ContextualizationStream/src//main/java/MethodReference)
+- Acesse sobre: [Method References](ContextualizationStream/src/main/java/MethodReference/ExampleMethodReference.java)
 
 ## Functional Interface 🔁
 
@@ -30,19 +30,19 @@ As interfaces funcionais são interfaces que possuem um único método abstrato.
 As interfaces funcionais permitem tratar comportamentos como objetos, facilitando a passagem de funções como argumentos e a composição de comportamentos.
 
 - 🔂 **Consumer<T>**: Representa uma operação que recebe um argumento e não retorna resultado.
-  - Acesse sobre: [Consumer](FunctionalInterface/src/main/java/Consumer)
+  - Acesse sobre: [Consumer](FunctionalInterface/src/main/java/Consumer/ConsumerExample.java)
 
 - 📤 **Supplier<T>**: Representa uma operação que não recebe argumentos e retorna um resultado.
-  - Acesse sobre: [Supplier](FunctionalInterface/src/main/java/Supplier)
+  - Acesse sobre: [Supplier](FunctionalInterface/src/main/java/Supplier/SupplierExample.java)
 
 - 🔄 **Function<T, R>**: Representa uma operação que recebe um argumento e retorna um resultado.
-  - Acesse sobre: [Function](FunctionalInterface/src/main/java/Function)
+  - Acesse sobre: [Function](FunctionalInterface/src/main/java/Function/FunctionExample.java)
 
 - 🎯 **Predicate<T>**: Representa uma operação que recebe um argumento e retorna um booleano.
-  - Acesse sobre: [Predicate](FunctionalInterface/src/main/java/Predicate)
+  - Acesse sobre: [Predicate](FunctionalInterface/src/main/java/Predicate/PredicateExample.java)
 
 - 🔁 **BinaryOperator<T>**: Representa uma operação sobre dois argumentos do mesmo tipo, retornando um resultado do mesmo tipo.
-  - Acesse sobre: [BinaryOperator](FunctionalInterface/src/main/java/BinaryOperator)
+  - Acesse sobre: [BinaryOperator](FunctionalInterface/src/main/java/BinaryOperator/BinaryOperatorExample.java)
 
 ### Desafio
 
