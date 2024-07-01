@@ -27,6 +27,22 @@ public class ConsumerExample {
     numeros.forEach(imprimirNumeroPar);
 
     System.out.println("------------------- Com Stream -------------------");
+
+    // Exemplo sem Lambda para comparação
+    System.out.println("---------------- Sem Lambda ----------------");
+    numeros.stream().forEach(new Consumer<Integer>() {
+      @Override
+      public void accept(Integer n) {
+        if (n % 2 == 0) {
+          System.out.println(n + " É PAR");
+        } else {
+          System.out.println("O número " + n + " É IMPAR");
+        }
+      }
+    });
+
+    // Exemplo com Lambda para comparação
+    System.out.println("---------------- Com Lambda ----------------");
     // Usar o Consumer para imprimir números pares no Stream
     numeros.stream()
         .filter(n -> n % 2 == 0)
