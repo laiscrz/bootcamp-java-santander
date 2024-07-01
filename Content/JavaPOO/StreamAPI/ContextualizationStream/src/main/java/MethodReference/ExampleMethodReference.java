@@ -1,6 +1,7 @@
 package main.java.MethodReference;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class ExampleMethodReference {
@@ -13,20 +14,15 @@ public class ExampleMethodReference {
         this.pessoaList = new ArrayList<>();
     }
 
-    // Método para ordenar por altura usando referência de método
+    // Método para ordenar por altura usando Comparator e referência de método
     public List<Pessoa> ordenarPorAltura() {
         if (!pessoaList.isEmpty()) {
             List<Pessoa> pessoasPorAltura = new ArrayList<>(pessoaList);
-            pessoasPorAltura.sort(ExampleMethodReference::compararAltura);
+            pessoasPorAltura.sort(Comparator.comparingDouble(Pessoa::getAltura));
             return pessoasPorAltura;
         } else {
             throw new RuntimeException("A lista está vazia!");
         }
-    }
-
-    // Método comparador estático para referência de método
-    private static int compararAltura(Pessoa p1, Pessoa p2) {
-        return Double.compare(p1.getAltura(), p2.getAltura());
     }
 
     // Método principal para testar a classe
