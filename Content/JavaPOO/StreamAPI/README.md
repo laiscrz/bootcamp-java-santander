@@ -54,10 +54,10 @@ As interfaces funcionais permitem tratar comportamentos como objetos, facilitand
 
 **Sobre:**
 - 🆕 **Extra: Conhecendo a Class Optional<T>**: Saiba como utilizar a classe `Optional` para evitar `NullPointerException` e tornar o código mais robusto.
-  - Acesse sobre: [Conhecendo a Class Optional](OptionalClass/Introduction)
+  - Acesse sobre: [Conhecendo a Class Optional](OptionalClass)
 
 - 🛠️ **Extra: Utilizando a Class Optional<T> em um projeto real**: Veja um exemplo prático de uso da classe `Optional` em um projeto.
-  - Acesse sobre: [Utilizando a Class Optional em um projeto real](OptionalClass/RealProject)
+  - Acesse sobre: [Utilizando a Class Optional em um projeto real](OptionalClass/OptionalUsage)
 
 --------------------------------
 > Este README descreve os tópicos de Stream API em Java abordados nas aulas do Bootcamp Santander da DIO, proporcionando um guia prático e teórico para quem está iniciando no aprendizado desta linguagem de programação.
