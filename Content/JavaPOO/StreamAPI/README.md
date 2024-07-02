@@ -44,10 +44,10 @@ As interfaces funcionais permitem tratar comportamentos como objetos, facilitand
 - 🔁 **BinaryOperator<T>**: Representa uma operação sobre dois argumentos do mesmo tipo, retornando um resultado do mesmo tipo.
   - Acesse sobre: [BinaryOperator](FunctionalInterfaces/src/main/java/BinaryOperator/BinaryOperatorExample.java)
 
-### Desafio
+### Exercícios (Desafio) 🌟 
 
-- 🚀 **Desafio! Conheça as operações do Stream API**: Pratique as operações da Stream API e aprofunde seu conhecimento.
-  - Acesse o desafio: [Desafio do Stream API](FunctionalInterface/src/main/java/OperationsWithStream)
+- ✴️ **Desafio! Conheça as operações do Stream API**: Pratique as operações da Stream API e aprofunde seu conhecimento.
+  - Acesse o desafio: [Exercícios do Stream API](ExercisesStreamAPI)
 
 ## Class `Optional` ℹ️
 `Optional` é uma classe introduzida no Java 8 que encapsula uma referência que pode ser nula ou não-nula. Ela ajuda a evitar `NullPointerException` e torna o código mais robusto ao forçar o programador a verificar se um valor está presente antes de tentar acessá-lo.
