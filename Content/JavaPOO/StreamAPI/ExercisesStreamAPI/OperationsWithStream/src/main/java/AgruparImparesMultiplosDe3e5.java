@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class AgruparImparesMultiplosDe3e5 {
 
     public static void main(String[] args) {
-        List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+        List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
         // Agrupamento de números ímpares que são múltiplos de 3 ou 5
         Map<String, List<Integer>> grupos = numeros.stream()
