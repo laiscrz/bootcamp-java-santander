@@ -110,5 +110,69 @@ public class Main {
         }
     }
 
-    
+    private static void realizarOperacoes(Scanner scanner, Banco banco) {
+        System.out.println("=== Realizar Operações ===");
+        System.out.print("Número da conta: ");
+        int numeroConta = scanner.nextInt();
+        scanner.nextLine();
+
+        Conta contaSelecionada = null;
+        for (Conta conta : banco.getContas()) {
+            if (conta.getNumero() == numeroConta) {
+                contaSelecionada = conta;
+                break;
+            }
+        }
+
+        if (contaSelecionada == null) {
+            System.out.println("Conta não encontrada!");
+            return;
+        }
+
+        System.out.println("Bem-vindo(a) de volta, " + contaSelecionada.getCliente().getNome() + "!");
+
+        while (true) {
+            exibirMenuOperacoes();
+
+            int operacao = scanner.nextInt();
+            scanner.nextLine(); 
+
+            switch (operacao) {
+                case 1:
+                    realizarDeposito(scanner, contaSelecionada);
+                    break;
+                case 2:
+                    realizarSaque(scanner, contaSelecionada);
+                    break;
+                case 3:
+                    realizarTransferencia(scanner, contaSelecionada, banco);
+                    break;
+                case 4:
+                    consultarSaldo(contaSelecionada);
+                    break;
+                case 5:
+                    imprimirExtrato(contaSelecionada);
+                    break;
+                default:
+                    System.out.println("Operação inválida!");
+            }
+
+            System.out.print("Deseja realizar outra operação nesta conta? (S/N): ");
+            String resposta = scanner.nextLine().toUpperCase();
+            if (!resposta.equals("S")) {
+                break;
+            }
+        }
+    }
+
+    private static void exibirMenuOperacoes() {
+        System.out.println("=== Menu de Operações ===");
+        System.out.println("1. Depositar");
+        System.out.println("2. Sacar");
+        System.out.println("3. Transferir");
+        System.out.println("4. Consultar Saldo");
+        System.out.println("5. Imprimir Extrato");
+        System.out.print("Escolha uma operação: ");
+    }
+
 }
