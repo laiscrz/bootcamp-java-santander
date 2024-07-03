@@ -175,4 +175,13 @@ public class Main {
         System.out.print("Escolha uma operação: ");
     }
 
+    private static void realizarDeposito(Scanner scanner, Conta conta) {
+        System.out.print("Valor para depósito: ");
+        double valorDeposito = scanner.nextDouble();
+        scanner.nextLine();
+
+        conta.depositar(valorDeposito);
+        System.out.println("Depósito realizado com sucesso!");
+    }
+
 }
