@@ -184,4 +184,17 @@ public class Main {
         System.out.println("Depósito realizado com sucesso!");
     }
 
+    private static void realizarSaque(Scanner scanner, Conta conta) {
+        System.out.print("Valor para saque: ");
+        double valorSaque = scanner.nextDouble();
+        scanner.nextLine(); 
+
+        try {
+            conta.sacar(valorSaque);
+            System.out.println("Saque realizado com sucesso!");
+        } catch (SaldoInsuficienteException e) {
+            System.out.println("Erro ao realizar o saque: " + e.getMessage());
+        }
+    }
+
 }
