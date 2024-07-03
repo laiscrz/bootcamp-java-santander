@@ -3,7 +3,7 @@
 > Este desafio tem como objetivo exercitar o conteúdo de Programação Orientada a Objetos (POO) utilizando Java, através da implementação de um banco digital.
 
 ## Objetivo 🎯
-1. **Criação do Projeto em Java (`DigitalBankingPOO`):**
+1. **Criação do Projeto em Java (`DigitalBankPOO`):**
    - Implementar os pilares da POO: Abstração, Encapsulamento, Herança e Polimorfismo.
    - Desenvolver classes que representem entidades do banco como Conta, Cliente e Transação.
    - Utilizar interfaces onde aplicável para definir comportamentos comuns.
@@ -118,5 +118,8 @@ classDiagram
     Main *--> Conta
     Main *--> IConta
 ```
+## Implementação do código Java💻
+As classes e interfaces foram implementadas em Java e podem ser encontradas no diretório `src/main/java/bancodigital`.
+
 --------------------------------------------
 > Aproveite o projeto e explore os conceitos de POO em Java no contexto de um banco digital! 🎊
