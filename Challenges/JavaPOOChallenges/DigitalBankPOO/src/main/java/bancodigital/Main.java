@@ -197,6 +197,32 @@ public class Main {
         }
     }
 
+    private static void realizarTransferencia(Scanner scanner, Conta contaOrigem, Banco banco) {
+        System.out.print("Número da conta destino: ");
+        int numeroContaDestino = scanner.nextInt();
+        scanner.nextLine(); 
+
+        Conta contaDestino = null;
+        for (Conta conta : banco.getContas()) {
+            if (conta.getNumero() == numeroContaDestino) {
+                contaDestino = conta;
+                break;
+            }
+        }
+
+        if (contaDestino == null) {
+            System.out.println("Conta destino não encontrada!");
+            return;
+        }
+
+        System.out.print("Valor para transferência: ");
+        double valorTransferencia = scanner.nextDouble();
+        scanner.nextLine(); 
+
+        contaOrigem.transferir(valorTransferencia, contaDestino);
+        System.out.println("Transferência realizada com sucesso!");
+    }
+
     private static void consultarSaldo(Conta conta) {
         System.out.println("Saldo atual: R$ " + conta.getSaldo());
     }
