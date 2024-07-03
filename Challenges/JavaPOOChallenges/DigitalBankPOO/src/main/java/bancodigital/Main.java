@@ -57,5 +57,12 @@ public class Main {
         }
     }
 
-    
+    private static void exibirMenu() {
+        System.out.println("=== Menu ===");
+        System.out.println("1. Criar conta");
+        System.out.println("2. Realizar operações");
+        System.out.println("3. Sair");
+        System.out.print("Escolha uma opção: ");
+    }
+
 }
