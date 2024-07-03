@@ -65,4 +65,50 @@ public class Main {
         System.out.print("Escolha uma opção: ");
     }
 
+    private static void criarConta(Scanner scanner, List<Conta> contas) {
+        System.out.println("=== Criar Conta ===");
+        System.out.print("Nome do cliente: ");
+        String nomeCliente = scanner.nextLine();
+        System.out.print("Tipo de cliente (Físico/F ou Jurídico/J): ");
+        String tipoCliente = scanner.nextLine().toUpperCase();
+
+        Cliente cliente;
+        Conta novaConta = null;
+
+        if (tipoCliente.equals("F")) {
+            System.out.print("CPF do cliente: ");
+            String cpf = scanner.nextLine();
+            cliente = new ClienteFisico(nomeCliente, cpf);
+        } else if (tipoCliente.equals("J")) {
+            System.out.print("CNPJ do cliente: ");
+            String cnpj = scanner.nextLine();
+            cliente = new ClienteJuridico(nomeCliente, cnpj);
+        } else {
+            System.out.println("Tipo de cliente inválido!");
+            return;
+        }
+
+        System.out.print("Tipo de conta (Corrente/C ou Poupança/P): ");
+        String tipoConta = scanner.nextLine().toUpperCase();
+        if (tipoConta.equals("C")) {
+            novaConta = new ContaCorrente(cliente);
+            contas.add(novaConta);
+            System.out.println("Conta corrente criada com sucesso!");
+        } else if (tipoConta.equals("P")) {
+            novaConta = new ContaPoupanca(cliente);
+            contas.add(novaConta);
+            System.out.println("Conta poupança criada com sucesso!");
+        } else {
+            System.out.println("Tipo de conta inválido!");
+            return;
+        }
+
+        // Exibir informações da conta criada
+        if (novaConta != null) {
+            System.out.println("Informações da nova conta:");
+            novaConta.imprimirInfosComuns();
+        }
+    }
+
+    
 }
