@@ -11,7 +11,6 @@
 2. **Funcionalidades Esperadas:**
    - Criação de contas para novos clientes.
    - Realização de depósitos, saques e transferências entre contas.
-   - Implementação de um sistema de autenticação simples com login e senha.
    - Possibilidade de visualização do saldo e extrato da conta.
 
 ## Diagrama UML 🖼️
