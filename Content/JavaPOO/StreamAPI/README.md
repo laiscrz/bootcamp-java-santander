@@ -58,6 +58,7 @@ As interfaces funcionais permitem tratar comportamentos como objetos, facilitand
 
 - 🛠️ **Extra: Utilizando a Class Optional<T> em um projeto real**: Veja um exemplo prático de uso da classe `Optional` em um projeto.
   - Acesse sobre: [Utilizando a Class Optional em um projeto real](OptionalClass/OptionalUsage)
+  - ***Obs.*** as classes do projeto estão localizadas em `src/main/java/gerenciamentousuarios`.
 
 --------------------------------
 > Este README descreve os tópicos de Stream API em Java abordados nas aulas do Bootcamp Santander da DIO, proporcionando um guia prático e teórico para quem está iniciando no aprendizado desta linguagem de programação.
