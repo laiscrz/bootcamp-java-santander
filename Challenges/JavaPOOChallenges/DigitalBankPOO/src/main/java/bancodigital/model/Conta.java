@@ -1,5 +1,6 @@
 package main.java.bancodigital.model;
 
+import main.java.bancodigital.exceptions.SaldoInsuficienteException;
 import main.java.bancodigital.interfaces.IConta;
 
 public abstract class Conta implements IConta {
@@ -19,7 +20,10 @@ public abstract class Conta implements IConta {
     }
 
     @Override
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SaldoInsuficienteException {
+        if (saldo < valor) {
+            throw new SaldoInsuficienteException();
+        }
         saldo -= valor;
     }
 
@@ -30,8 +34,14 @@ public abstract class Conta implements IConta {
 
     @Override
     public void transferir(double valor, IConta contaDestino) {
-        this.sacar(valor);
-        contaDestino.depositar(valor);
+        try {
+            this.sacar(valor);
+            contaDestino.depositar(valor);
+            System.out.println("Transferência realizada com sucesso!");
+        } catch (SaldoInsuficienteException e) {
+            System.out.println("Não foi possível transferir o valor: saldo insuficiente.");
+            
+        }
     }
 
     public int getAgencia() {
