@@ -197,4 +197,11 @@ public class Main {
         }
     }
 
+    private static void consultarSaldo(Conta conta) {
+        System.out.println("Saldo atual: R$ " + conta.getSaldo());
+    }
+
+    private static void imprimirExtrato(Conta conta) {
+        conta.imprimirExtrato();
+    }
 }
