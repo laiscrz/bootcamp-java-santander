@@ -56,6 +56,10 @@ public abstract class Conta implements IConta {
         return saldo;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
     // Método abstrato
     public abstract void imprimirExtrato();
 
