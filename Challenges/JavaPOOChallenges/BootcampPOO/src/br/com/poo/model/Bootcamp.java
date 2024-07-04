@@ -6,7 +6,9 @@ import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Bootcamp {
+import br.com.poo.interfaces.IBootcamp;
+
+public class Bootcamp implements IBootcamp{
     private String nome;
     private String descricao;
     private final LocalDate dataInicial = LocalDate.now();
@@ -53,6 +55,36 @@ public class Bootcamp {
 
     public void setConteudos(Set<Conteudo> conteudos) {
         this.conteudos = conteudos;
+    }
+
+    @Override
+    public void adicionarDev(Dev dev) {
+        devsInscritos.add(dev);
+    }
+
+    @Override
+    public void removerDev(Dev dev) {
+        devsInscritos.remove(dev);
+    }
+
+    @Override
+    public Set<Dev> listarDevsInscritos() {
+        return devsInscritos;
+    }
+
+    @Override
+    public void adicionarConteudo(Conteudo conteudo) {
+        conteudos.add(conteudo);
+    }
+
+    @Override
+    public void removerConteudo(Conteudo conteudo) {
+        conteudos.remove(conteudo);
+    }
+
+    @Override
+    public Set<Conteudo> listarConteudos() {
+        return conteudos;
     }
 
     @Override
