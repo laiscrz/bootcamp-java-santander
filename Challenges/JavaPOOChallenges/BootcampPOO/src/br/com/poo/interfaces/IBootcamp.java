@@ -6,6 +6,7 @@ import br.com.poo.model.Conteudo;
 import br.com.poo.model.Dev;
 
 public interface IBootcamp {
+    
     void adicionarDev(Dev dev);
 
     void removerDev(Dev dev);
