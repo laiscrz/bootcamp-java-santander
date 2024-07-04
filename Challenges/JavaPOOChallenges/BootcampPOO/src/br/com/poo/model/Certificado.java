@@ -1,8 +1,11 @@
 package br.com.poo.model;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
-public class Certificado {
+import br.com.poo.interfaces.ICertificado;
+
+public class Certificado implements ICertificado {
     private Dev dev;
     private Curso curso;
     private LocalDate dataConclusao;
@@ -38,10 +41,18 @@ public class Certificado {
     }
 
     @Override
-    public String toString() {
-        return "Certificado = { DEV: " + dev.getNome() +
-                ", curso: " + curso.getTitulo() +
-                ", dataConclusao: " + dataConclusao +
-                '}';
+    public boolean isCertificadoValido() {
+        LocalDate hoje = LocalDate.now();
+        long diasDesdeConclusao = ChronoUnit.DAYS.between(dataConclusao, hoje);
+        return diasDesdeConclusao <= 365; 
+    }
+
+    @Override
+    public String obterDetalhesCertificado() {
+        String detalhes = "-------- CERTIFICADO --------" +
+                "\nDEV: " + dev.getNome() +
+                "\nCURSO: " + curso.getTitulo() +
+                "\nDATA DA CONCLUSÃO: " + dataConclusao;
+        return detalhes;
     }
 }
