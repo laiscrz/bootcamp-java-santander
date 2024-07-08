@@ -16,7 +16,7 @@ A pasta `Content` está organizado em pastas por assuntos/conteúdo principais d
 
 ### Testes e Gerenciamento de Dependências 🧪
 - Implementações de testes unitários com JUnit, práticas de desenvolvimento utilizando Mockito e gerenciamento de dependências com Maven.
-- Acesse à pasta :
+- Acesse à pasta : [Testes e Gerenciamento de Dependências em Java](JavaTestsDependencies)
 
 ### Banco de Dados 📊
 - Introdução aos bancos de dados relacionais com foco em SQL e fundamentos de bancos de dados NoSQL utilizando MongoDB.
