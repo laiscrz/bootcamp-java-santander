@@ -84,27 +84,6 @@ my-app
 
 ## Diagrama de Ciclo de Vida do Build 🏗️
 
-```plaintext
-validate -> compile -> test -> package -> verify -> install -> deploy
-```
-
----
-
-## Conclusão 🎯
-
-O Apache Maven é uma ferramenta indispensável para desenvolvedores Java, proporcionando uma maneira eficiente e padronizada de gerenciar projetos, dependências e processos de build. Com o Maven, você pode focar mais no desenvolvimento e menos na configuração do ambiente, tornando seu fluxo de trabalho mais produtivo e organizado.
-
----
-
-Para mais informações, visite o [site oficial do Apache Maven](https://maven.apache.org/). 🌐
-
-Para encontrar e adicionar dependências ao seu projeto, você pode usar o [Maven Central Repository](https://search.maven.org/). 🔍
-
-
-
-
-## Diagrama de Ciclo de Vida do Build 🏗️
-
 ```mermaid
 graph LR
     validate --> compile --> test --> package --> verify --> install --> deploy
@@ -119,3 +98,5 @@ O Apache Maven é uma ferramenta indispensável para desenvolvedores Java, propo
 ---
 
 Para mais informações, visite o [site oficial do Apache Maven](https://maven.apache.org/). 🌐
+
+Para encontrar e adicionar dependências ao seu projeto, você pode usar o [Maven Central Repository](https://search.maven.org/). 🔍
