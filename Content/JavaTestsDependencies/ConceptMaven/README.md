@@ -89,6 +89,31 @@ graph LR
     validate --> compile --> test --> package --> verify --> install --> deploy
 ```
 
+## Criando um Projeto Maven pelo Terminal 🖥️
+
+Para criar um novo projeto Maven pelo terminal, siga os passos abaixo:
+
+1. Abra o terminal.
+2. Execute o comando para criar um novo projeto Maven:
+
+```sh
+mvn archetype:generate -DgroupId=com.example -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+
+Este comando gera a estrutura básica de um projeto Maven usando o archetype `maven-archetype-quickstart`.
+
+3. Navegue até o diretório do projeto criado:
+
+```sh
+cd my-app
+```
+
+4. Verifique a estrutura de diretórios e o arquivo `pom.xml` gerado:
+
+```sh
+tree .
+```
+
 ---
 
 ## Conclusão 🎯
