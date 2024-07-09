@@ -17,5 +17,8 @@ public class PessoaTest {
     void testMaiorIdade(){
         Pessoa pessoa = new Pessoa("Maria", LocalDate.of(2005, 05, 20));
         Assertions.assertTrue(pessoa.MaiorIdade());
+
+        Pessoa pessoaDois = new Pessoa("José", LocalDate.of(2010, 04, 10));
+        Assertions.assertFalse(pessoaDois.MaiorIdade());
     }
 }
