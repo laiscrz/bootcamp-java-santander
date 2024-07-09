@@ -53,6 +53,7 @@ Para começar com JUnit, siga estes passos:
 - **Nome da Classe**: Sugere-se sempre usar o mesmo nome da Classe que está sendo testada adicionando o sufixo “Test”.
 
 ### Método de Teste
+
 - Sugere-se usar um nome bastante descritivo sobre o cenário ou comportamento esperado a ser testado.
 
 ### Anotações (Annotations)
@@ -89,3 +90,53 @@ Para começar com JUnit, siga estes passos:
   
 - **Documentação Executável**: Sirva como documentação executável do comportamento esperado do seu código.
 
+## Exemplo Prático 📘
+
+Aqui está um exemplo mais elaborado de um teste utilizando várias funcionalidades do JUnit:
+
+```java
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class ConsultarDadosTest {
+
+    @BeforeAll 
+    static void configurarConexao() {
+        Conexao.iniciarConexao();
+        System.out.println("Conexão feita com sucesso!");
+    }
+
+    @BeforeEach 
+    void inserirDados() {
+        Conexao.insert(new Pessoa("Mariano", LocalDate.of(2014, 5, 29)));
+    }
+
+    @Test
+    void validarDados() {
+        Assertions.assertTrue(true);
+    }
+
+    @AfterEach
+    void deletarDados() {
+        Conexao.delete(new Pessoa("Mariano", LocalDate.of(2014, 5, 29)));
+    }
+
+    @AfterAll
+    static void fecharConexao() {
+        Conexao.fecharConexao();
+        System.out.println("Conexão fechada.");
+    }
+}
+```
+
+## Recursos Adicionais 📚
+
+- [Documentação Oficial do JUnit](https://junit.org/junit5/docs/current/user-guide/)
+
+---
+
+Este guia fornece uma visão abrangente do JUnit, suas funcionalidades e melhores práticas para escrever testes unitários eficazes.
