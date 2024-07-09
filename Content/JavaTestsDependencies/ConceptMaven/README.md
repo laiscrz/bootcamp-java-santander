@@ -23,7 +23,7 @@ O Maven possui um ciclo de vida de build bem definido, dividido em fases. As fas
 
 ### 3. Dependências 🔗
 O Maven facilita o gerenciamento de dependências, permitindo que você declare as bibliotecas que seu projeto necessita. Ele resolve automaticamente as dependências transitivas e baixa os arquivos necessários dos repositórios configurados.
-
+- Para saber mais: [Anotações sobre Dependências](DependenciesPratice)
 ```xml
 <dependencies>
   <dependency>
@@ -36,7 +36,7 @@ O Maven facilita o gerenciamento de dependências, permitindo que você declare 
 
 ### 4. Plugins 🔌
 Os plugins no Maven são usados para realizar tarefas durante o ciclo de vida do build. Eles podem compilar código, executar testes, criar pacotes, gerar documentação e muito mais.
-
+- Para saber mais: [Anotações sobre Plugins](PluginsPratice)
 ```xml
 <build>
   <plugins>
