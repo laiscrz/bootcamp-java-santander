@@ -31,3 +31,35 @@ graph TD;
 - **Garantia de Qualidade** ⭐: Melhora a confiabilidade do software ao validar funcionalidades em vários níveis antes do lançamento.
 
 Esta organização da Pirâmide de Testes ajuda a equilibrar a cobertura de testes e otimizar a eficiência no processo de desenvolvimento de software, garantindo que o produto final atenda aos padrões de qualidade esperados.
+
+### Antipattern 
+
+Este antipattern representa uma abordagem invertida na organização dos testes, o que pode resultar em desperdício de recursos e maior incidência de problemas no produto final. Aqui está como funciona essa organização invertida:
+
+```mermaid
+graph TD;
+    A[Manual Tests] --> B[Automated]
+    B --> C[Integration Tests]
+    C --> D[Unit Tests]
+```
+
+- **Manual Tests** 🚫: Testes manuais são realizados de forma predominante, consumindo tempo e recursos significativos devido à execução manual.
+
+- **Automated Tests** 🤖: Automação é aplicada após os testes manuais, mas de maneira fragmentada e não sistematizada.
+
+- **Integration Tests** 🔄: Testes de integração são implementados posteriormente, verificando a interação entre diferentes componentes do sistema de maneira não otimizada.
+
+- **Unit Tests** 🧪: Testes unitários são deixados para o final ou não são priorizados, comprometendo a identificação precoce de erros no código.
+
+Este antipattern destaca a importância da Pirâmide de Testes na orientação de uma abordagem eficaz e eficiente para garantir a qualidade do software durante todo o ciclo de desenvolvimento.
+
+### Comparação entre Pirâmide de Testes Ideal e Antipattern Invertido
+
+<p align="center"><img src="doc/compareTestsPyramid.png" alt="Foto da representação" width="400" height="400" ></p>
+
+#### A Pirâmide de Testes Ideal:
+- Estrutura: Organizada com a base mais larga de Unit Tests, seguida por Service Tests e UI Tests no topo.
+- Benefícios: Maior cobertura de testes desde o nível de código até a interface do usuário, garantindo confiabilidade e eficiência.
+  
+#### O Antipattern Invertido:
+- Estrutura: Invertida, começando com Manual Tests e terminando com Unit Tests, o que pode resultar em maior custo e menor eficiência na detecção precoce de defeitos.
