@@ -83,11 +83,40 @@ my-app
 ```
 
 ## Diagrama de Ciclo de Vida do Build 🏗️
+```mermaid
+graph TD
+    Default --> Clean --> Site
+```
 
+### Ciclo de Vida Padrão (Default)
 ```mermaid
 graph LR
     validate --> compile --> test --> package --> verify --> install --> deploy
 ```
+- Principal ciclo.
+- Responsável pelo deploy local.
+- Composto por 23 fases (comandos).
+
+### Ciclo de Vida Clean
+```mermaid
+graph LR
+    pre-clean --> clean --> post-clean
+```
+- **pre-clean**: Executa tarefas necessárias antes da limpeza.
+- **clean**: Remove todos os arquivos gerados na build anterior.
+- **post-clean**: Executa tarefas necessárias após a limpeza.
+
+### Ciclo de Vida Site
+```mermaid
+graph LR
+    pre-site --> site --> post-site --> site-deploy
+```
+- **pre-site**: Executa tarefas necessárias antes da geração do site.
+- **site**: Gera a documentação do projeto.
+- **post-site**: Executa tarefas necessárias após a geração do site.
+- **site-deploy**: Despluga a documentação gerada para um servidor de documentação.
+
+
 
 ## Criando um Projeto Maven pelo Terminal 🖥️
 
