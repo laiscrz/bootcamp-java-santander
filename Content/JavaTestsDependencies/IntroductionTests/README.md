@@ -6,12 +6,17 @@
 1. [O que é um Teste?](#o-que-é-um-teste-)
 2. [Evolução de Testes na Engenharia de Software](#evolução-de-testes-na-engenharia-de-software-)
    - [Modelo Cascata](#modelo-cascata)
-   - [Desenvolvimento Ágil](#desenvolvimento-àgil)
+   - [Desenvolvimento Ágil](#desenvolvimento-ágil-)
 3. [Conceitos Básicos de Testes de Software](#conceitos-básicos-de-testes-de-software-)
    - [Terminologia](#terminologia-)
      - [Defeito, Erro, Falha](#defeito-erro-falha)
      - [Verificação vs Validação](#verificação-vs-validação)
      - [Estático vs Dinâmico](#estático-vs-dinâmico)
+4. [Outros Aspectos dos Testes de Software](#outros-aspectos-dos-testes-de-software-)
+   - [Níveis de Teste](#níveis-de-teste-)
+   - [Técnicas de Teste](#técnicas-de-teste-)
+   - [Testes não Funcionais](#testes-não-funcionais-)
+   - [Pirâmide de Testes](#pirâmide-de-testes-)
 ---
 
 ## O que é um Teste? 🧪
@@ -64,3 +69,20 @@ Erro --> Defeito --> Falha
 #### Estático vs Dinâmico
 - **Teste estático**: Análise do código sem a necessidade de execução, como revisões de código. 📝
 - **Teste dinâmico**: Envolve a execução do código para validar seu comportamento. 🏃‍♂️
+
+## Outros Aspectos dos Testes de Software 📊
+### Níveis de Teste 🔢
+- Explora os diferentes níveis de testes, como testes unitários, de integração, de sistema e de aceitação.
+- Acesse mais sobre: [Níveis de Teste](LevelsOfTesting)
+  
+### Técnicas de Teste ⏭️
+- Cobertura de técnicas como teste de caixa-preta, teste de caixa-branca, teste de regressão, entre outras.
+- Acesse mais sobre: [Técnicas de Teste](TestingTechniques)
+
+### Testes não Funcionais 📛
+- Aborda testes relacionados a desempenho, segurança, usabilidade e outros aspectos não funcionais.
+- Acesse mais sobre: [Testes não Funcionais](NonFunctionalTests)
+  
+### Pirâmide de Testes 🔼
+- Explica a distribuição ideal dos diferentes tipos de teste na estratégia de garantia de qualidade.
+- Acesse mais sobre: [Pirâmide de Testes](TestingPyramid)
