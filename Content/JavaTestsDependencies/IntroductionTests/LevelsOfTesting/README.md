@@ -38,3 +38,36 @@ Os testes unitários são cruciais no desenvolvimento de software porque:
 - **Integração Contínua**: São essenciais para a prática de Integração Contínua (CI), onde testes são automatizados e executados frequentemente para garantir a estabilidade do código em constante evolução.
 
 Os testes unitários são escritos pelos próprios desenvolvedores e devem ser rápidos de executar e fáceis de manter. Eles formam a base para testes mais abrangentes em níveis superiores, como os testes de integração e de sistema.
+
+Claro, aqui estão os testes Alpha, Beta e Canary organizados em tópicos usando marcadores:
+
+### Testes Alpha, Beta e Canary 🚀
+
+- **Testes Alpha**
+  - Realizados internamente pela equipe de desenvolvimento.
+  - Objetivo inicial de validar o software para identificar problemas básicos.
+  - Garantem que o software esteja minimamente funcional antes dos testes Beta.
+
+- **Testes Beta**
+  - Distribuição para um grupo limitado de usuários externos.
+  - Usuários testam o software em condições mais próximas do ambiente real.
+  - Fornecem feedback sobre usabilidade e identificam problemas não detectados nos testes Alpha.
+
+- **Testes Canary**
+  - Lançamento de novas versões para um grupo reduzido de usuários selecionados.
+  - Permite monitorar o desempenho e a estabilidade da versão em um ambiente de produção real.
+  - Identifica problemas antes de uma implantação em larga escala.
+
+### Vantagens dos Testes Alpha, Beta e Canary 🌟
+
+- **Feedback Antecipado**
+  - Obtém feedback inicial dos usuários antes do lançamento oficial.
+  - Ajuda a melhorar a qualidade do software com base nas primeiras impressões.
+
+- **Identificação de Problemas**
+  - Detecta bugs e problemas de desempenho que podem não ser evidentes durante os testes internos.
+
+- **Validação de Usabilidade**
+  - Valida a experiência do usuário e permite ajustes antes do lançamento final.
+
+Esses testes são fundamentais para assegurar que o software atenda às expectativas dos usuários e esteja preparado para um lançamento estável e bem-sucedido.
