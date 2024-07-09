@@ -6,7 +6,7 @@
 1. [O que é um Teste?](#o-que-é-um-teste-)
 2. [Evolução de Testes na Engenharia de Software](#evolução-de-testes-na-engenharia-de-software-)
    - [Modelo Cascata](#modelo-cascata)
-   - [Desenvolvimento Ágil](#desenvolvimento-ágil-)
+   - [Desenvolvimento Ágil](#desenvolvimento-ágil)
 3. [Conceitos Básicos de Testes de Software](#conceitos-básicos-de-testes-de-software-)
    - [Terminologia](#terminologia-)
      - [Defeito, Erro, Falha](#defeito-erro-falha)
@@ -14,7 +14,7 @@
      - [Estático vs Dinâmico](#estático-vs-dinâmico)
 4. [Outros Aspectos dos Testes de Software](#outros-aspectos-dos-testes-de-software-)
    - [Níveis de Teste](#níveis-de-teste-)
-   - [Técnicas de Teste](#técnicas-de-teste-)
+   - [Técnicas de Teste](#técnicas-de-teste-%EF%B8%8F)
    - [Testes não Funcionais](#testes-não-funcionais-)
    - [Pirâmide de Testes](#pirâmide-de-testes-)
 ---
@@ -35,7 +35,7 @@ graph LR
 Especificação --> Projeto_de_Software --> Implementação --> Testes --> Implantação
 ```
 
-### Desenvolvimento Ágil 🏃‍♂️
+### Desenvolvimento Ágil
 
 No Desenvolvimento Ágil, os testes são integrados ao longo de todo o ciclo de vida do software, em contraste com o modelo cascata. Esta abordagem promove iterações rápidas e feedback contínuo, permitindo ajustes e melhorias constantes no software. Os testes são automatizados sempre que possível, o que aumenta a eficiência e a confiabilidade do processo de desenvolvimento.
 ```mermaid
@@ -75,7 +75,7 @@ Erro --> Defeito --> Falha
 - Explora os diferentes níveis de testes, como testes unitários, de integração, de sistema e de aceitação.
 - Acesse mais sobre: [Níveis de Teste](LevelsOfTesting)
   
-### Técnicas de Teste ⏭️
+### Técnicas de Teste 🛠️
 - Cobertura de técnicas como teste de caixa-preta, teste de caixa-branca, teste de regressão, entre outras.
 - Acesse mais sobre: [Técnicas de Teste](TestingTechniques)
 
