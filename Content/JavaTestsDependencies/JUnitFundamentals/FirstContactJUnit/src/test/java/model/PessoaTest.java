@@ -13,5 +13,9 @@ public class PessoaTest {
         Assertions.assertEquals(19, pessoa.getIdade());
     }
 
-
+    @Test
+    void testMaiorIdade(){
+        Pessoa pessoa = new Pessoa("Maria", LocalDate.of(2005, 05, 20));
+        Assertions.assertTrue(pessoa.MaiorIdade());
+    }
 }
