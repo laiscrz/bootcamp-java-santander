@@ -1,11 +1,8 @@
-Para abordar os tópicos de Comportamento do Sistema, Performance, Escalabilidade, Segurança e Infraestrutura em Testes não Funcionais, aqui está um exemplo de estrutura inicial para o README:
-
----
-
 # Sobre: Testes não Funcionais 📛
 
 > Apronfundado em Testes não Funcionais.
 
+---
 ## Comportamento do Sistema 🔄
 
 ### Definição
@@ -24,6 +21,7 @@ Os testes de Comportamento do Sistema visam avaliar como o software se comporta 
 ### Ferramentas
 - Exemplos: JMeter, Gatling.
 
+---
 ## Performance e Escalabilidade 🚀
 
 ### Definição
@@ -41,6 +39,7 @@ Testes de Performance avaliam como o sistema se comporta em termos de velocidade
 ### Ferramentas
 - Exemplos: Apache JMeter, Locust.
 
+---
 ## Segurança 🔒
 
 ### Definição
@@ -57,6 +56,7 @@ Testes de Segurança avaliam a robustez do sistema contra ameaças e vulnerabili
 ### Ferramentas
 - Exemplos: OWASP ZAP, Burp Suite.
 
+---
 ## Infraestrutura 🛠️
 
 ### Definição
