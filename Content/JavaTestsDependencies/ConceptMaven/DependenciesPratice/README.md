@@ -2,6 +2,8 @@
 
 > Entendendo o conceito de Dependências do Maven.
 
+![Apache Maven Logo](https://maven.apache.org/images/maven-logo-black-on-white.png)
+
 ## 📋 Introdução
 
 Este projeto utiliza o Apache Maven como ferramenta de automação de compilação e gerenciamento de dependências. Maven simplifica o processo de construção, documentação e gestão do ciclo de vida do projeto.
