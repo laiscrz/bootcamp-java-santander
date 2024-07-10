@@ -2,6 +2,25 @@
 
 > Prática de modelagem de banco de dados: operações CRUD, chaves primárias e estrangeiras, alteração e exclusão de tabelas e registros.
 
+## Indice
+
+1. [Comandos SQL](#comandos-sql)
+   - [CREATE TABLE](#comando-sql-create-table)
+   - [INSERT](#comando-sql-insert)
+   - [SELECT](#comando-sql-select)
+   - [UPDATE](#comando-sql-update)
+   - [DELETE](#comando-sql-delete)
+   - [DROP](#comando-sql-drop)
+   - [ALTER](#comando-sql-alter)
+
+2. [Tipos de Dados](#tipos-de-dados)
+
+3. [Operadores SQL](#operadores-sql-utilizados)
+
+4. [Chaves Primárias (PRIMARY KEY) 🔑](#chaves-primárias-primary-key)
+
+5. [Chaves Estrangeiras (FOREIGN KEY) 🔗](#chaves-estrangeiras-foreign-key)
+
 ## Comandos SQL
 
 ### Comando SQL: CREATE TABLE
@@ -22,20 +41,6 @@ CREATE TABLE Cliente (
     email VARCHAR(100) UNIQUE
 );
 ```
----
-
-### Tipos de Dados
-Veja Abaixo:
-
-| Tipo de Dado | Descrição | SQL (nome do código) |
-|--------------|-----------|----------------------|
-| Inteiro      | Números inteiros, positivos ou negativos. | INT |
-| Decimal/Numerico | Números decimais, com precisão configurável. | DECIMAL(precision, scale) ou NUMERIC(precision, scale) |
-| Caractere/Varchar | Cadeias de caracteres variáveis de comprimento limitado. | VARCHAR(max_length) |
-| Data/Hora    | Data e/ou hora, incluindo data, hora ou ambos. | DATE, TIME, DATETIME |
-| Booleano     | Valores lógicos verdadeiro (true) ou falso (false). | BOOLEAN |
-| Texto longo  | Texto extenso, usado para armazenar grandes quantidades de dados de texto. | TEXT |
-
 --
 
 ### Comando SQL: INSERT
@@ -122,24 +127,6 @@ Para ordenar os resultados em ordem ascendente ou descendente, use a cláusula `
 ```sql
 SELECT * FROM Cliente ORDER BY nome ASC;
 ```
----
-### Operadores SQL utilizados:
-
-| Operador | Descrição                                              | Exemplo                              |
-|----------|--------------------------------------------------------|--------------------------------------|
-| =        | Igual a                                                 | `SELECT * FROM tabela WHERE coluna = valor;` |
-| <>       | Diferente de                                            | `SELECT * FROM tabela WHERE coluna <> valor;` |
-| >        | Maior que                                               | `SELECT * FROM tabela WHERE coluna > valor;` |
-| <        | Menor que                                               | `SELECT * FROM tabela WHERE coluna < valor;` |
-| >=       | Maior ou igual a                                        | `SELECT * FROM tabela WHERE coluna >= valor;` |
-| <=       | Menor ou igual a                                        | `SELECT * FROM tabela WHERE coluna <= valor;` |
-| LIKE     | Comparação de padrões de texto (coringa)                 | `SELECT * FROM tabela WHERE coluna LIKE 'padrão';` |
-| IN       | Verifica se o valor está dentro de um conjunto          | `SELECT * FROM tabela WHERE coluna IN (valor1, valor2);` |
-| BETWEEN  | Verifica se um valor está dentro de um intervalo        | `SELECT * FROM tabela WHERE coluna BETWEEN valor1 AND valor2;` |
-| AND      | Condição que requer que todas as condições sejam verdadeiras | `SELECT * FROM tabela WHERE condição1 AND condição2;` |
-| OR       | Condição que requer que pelo menos uma condição seja verdadeira | `SELECT * FROM tabela WHERE condição1 OR condição2;` |
-
-Esses operadores são fundamentais para criar consultas SQL que filtram e retornam dados de acordo com critérios específicos.
 ---
 
 ### Comando SQL: UPDATE
@@ -309,9 +296,41 @@ ADD telefone VARCHAR(20);
 Neste exemplo, a coluna `telefone` do tipo `VARCHAR` será adicionada à tabela `Cliente`.
 
 **Observação:** O comando `ALTER` permite ajustar a estrutura de um banco de dados existente sem a necessidade de recriar completamente o objeto.
+---
+
+## Tipos de Dados
+Veja Abaixo:
+
+| Tipo de Dado | Descrição | SQL (nome do código) |
+|--------------|-----------|----------------------|
+| Inteiro      | Números inteiros, positivos ou negativos. | INT |
+| Decimal/Numerico | Números decimais, com precisão configurável. | DECIMAL(precision, scale) ou NUMERIC(precision, scale) |
+| Caractere/Varchar | Cadeias de caracteres variáveis de comprimento limitado. | VARCHAR(max_length) |
+| Data/Hora    | Data e/ou hora, incluindo data, hora ou ambos. | DATE, TIME, DATETIME |
+| Booleano     | Valores lógicos verdadeiro (true) ou falso (false). | BOOLEAN |
+| Texto longo  | Texto extenso, usado para armazenar grandes quantidades de dados de texto. | TEXT |
 
 ---
-## Chaves Primárias (PRIMARY KEY) 🔑
+## Operadores SQL utilizados:
+
+| Operador | Descrição                                              | Exemplo                              |
+|----------|--------------------------------------------------------|--------------------------------------|
+| =        | Igual a                                                 | `SELECT * FROM tabela WHERE coluna = valor;` |
+| <>       | Diferente de                                            | `SELECT * FROM tabela WHERE coluna <> valor;` |
+| >        | Maior que                                               | `SELECT * FROM tabela WHERE coluna > valor;` |
+| <        | Menor que                                               | `SELECT * FROM tabela WHERE coluna < valor;` |
+| >=       | Maior ou igual a                                        | `SELECT * FROM tabela WHERE coluna >= valor;` |
+| <=       | Menor ou igual a                                        | `SELECT * FROM tabela WHERE coluna <= valor;` |
+| LIKE     | Comparação de padrões de texto (coringa)                 | `SELECT * FROM tabela WHERE coluna LIKE 'padrão';` |
+| IN       | Verifica se o valor está dentro de um conjunto          | `SELECT * FROM tabela WHERE coluna IN (valor1, valor2);` |
+| BETWEEN  | Verifica se um valor está dentro de um intervalo        | `SELECT * FROM tabela WHERE coluna BETWEEN valor1 AND valor2;` |
+| AND      | Condição que requer que todas as condições sejam verdadeiras | `SELECT * FROM tabela WHERE condição1 AND condição2;` |
+| OR       | Condição que requer que pelo menos uma condição seja verdadeira | `SELECT * FROM tabela WHERE condição1 OR condição2;` |
+
+Esses operadores são fundamentais para criar consultas SQL que filtram e retornam dados de acordo com critérios específicos.
+
+---
+## Chaves Primárias - PRIMARY KEY 🔑
 
 Uma chave primária é um campo ou conjunto de campos que identifica exclusivamente cada registro em uma tabela. Cada tabela pode ter no máximo uma chave primária. As características principais de uma chave primária são:
 
@@ -369,7 +388,7 @@ As chaves primárias são essenciais para o design e a integridade dos dados em 
 
 ---
 
-## Chaves Estrangeiras (FOREIGN KEY) 🔗
+## Chaves Estrangeiras - FOREIGN KEY 🔗
 
 Uma chave estrangeira é um campo ou conjunto de campos em uma tabela que faz referência à chave primária (ou uma coluna única com índice único) de outra tabela. As chaves estrangeiras são usadas para manter a integridade referencial entre as tabelas. Isso significa que os valores na coluna de chave estrangeira devem existir na coluna de chave primária correspondente na tabela referenciada.
 
@@ -426,9 +445,5 @@ Neste exemplo:
 - `ON UPDATE CASCADE` especifica que se a chave primária na tabela `Pedido` for atualizada, as alterações também serão refletidas na coluna `pedido_id` na tabela `ItemPedido`.
 - `ON DELETE SET NULL` especifica que se a chave primária na tabela `Pedido` for deletada, o valor correspondente na coluna `pedido_id` na tabela `ItemPedido` será definido como NULL.
 
-### Conclusão
-
-As chaves estrangeiras são cruciais para garantir a integridade referencial entre tabelas em um banco de dados relacional. Elas permitem que os dados relacionados sejam vinculados de maneira consistente, evitando inconsistências e mantendo a precisão dos dados ao longo do tempo. Saber como criar e modificar chaves estrangeiras usando SQL é fundamental para o design e a manutenção de bancos de dados eficazes e bem estruturados.
-
 ---
-
+> Comandos básicos de SQL.
