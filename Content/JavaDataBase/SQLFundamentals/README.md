@@ -21,7 +21,7 @@
 - Acesse em: [NormalizationBD](NormalizationBD)
 
 ### Consultas Avançadas 🔍
-- Trabalhando com consultas avançadas: junções, subconsultas, funções agregadas e agrupamento de resultados.
+- Trabalhando com consultas avançadas: junções, subconsultas, funções agregadas, agrupamento de resultados, ordenação e índices.
 - Acesse em: [AdvancedQueries](AdvancedQueries)
 
 ---
