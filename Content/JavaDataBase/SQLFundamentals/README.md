@@ -18,7 +18,7 @@
 
 ### Normalização 📏
 - Conceitos de normalização em bancos de dados relacionais.
-- Acesse em: [Normalization](Normalization)
+- Acesse em: [NormalizationBD](NormalizationBD)
 
 ### Consultas Avançadas 🔍
 - Trabalhando com consultas avançadas: junções, subconsultas, funções agregadas e agrupamento de resultados.
