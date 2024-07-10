@@ -17,9 +17,9 @@
 
 3. [Operadores SQL](#operadores-sql-utilizados)
 
-4. [Chaves Primárias (PRIMARY KEY) 🔑](#chaves-primárias-primary-key)
+4. [Chaves Primárias (PRIMARY KEY) 🔑](#chaves-primárias---primary-key-)
 
-5. [Chaves Estrangeiras (FOREIGN KEY) 🔗](#chaves-estrangeiras-foreign-key)
+5. [Chaves Estrangeiras (FOREIGN KEY) 🔗](#chaves-estrangeiras---foreign-key-)
 
 ## Comandos SQL
 
