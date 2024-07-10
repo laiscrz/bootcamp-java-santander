@@ -125,10 +125,87 @@ SELECT * FROM Cliente ORDER BY nome ASC;
 
 ---
 
-## UPDATE
+### Comando SQL: UPDATE
 
-## DELETE
+O comando `UPDATE` é usado para modificar registros existentes em uma tabela.
 
+#### Sintaxe do UPDATE
+
+A sintaxe básica do comando `UPDATE` é a seguinte:
+
+```sql
+UPDATE nome_da_tabela
+SET coluna1 = valor1, coluna2 = valor2, ...
+WHERE condição;
+```
+
+- `nome_da_tabela`: É o nome da tabela que será atualizada.
+- `coluna1 = valor1, coluna2 = valor2, ...`: São as colunas que serão atualizadas com seus novos valores.
+- `WHERE condição`: É opcional e especifica quais registros devem ser atualizados. Se omitido, todos os registros da tabela serão atualizados.
+
+#### Exemplo de Utilização
+
+Vamos usar a tabela `Cliente` como exemplo para atualizar um registro específico:
+
+```sql
+UPDATE Cliente
+SET email = 'joao.silva@example.com'
+WHERE id = 1;
+```
+
+Neste exemplo:
+- A coluna `email` do cliente com `id` igual a `1` será atualizada para `'joao.silva@example.com'`.
+
+#### Atualizando Todos os Registros de uma Tabela
+
+Para atualizar todos os registros de uma tabela, simplesmente omita a cláusula `WHERE`:
+
+```sql
+UPDATE Cliente
+SET email = 'novoemail@example.com';
+```
+
+**Observação:** Tome cuidado ao executar comandos `UPDATE` sem uma cláusula `WHERE`, pois isso atualizará todos os registros da tabela, o que pode não ser desejado em muitos casos.
+
+---
+
+### Comando SQL: DELETE
+
+O comando `DELETE` é usado para remover registros de uma tabela.
+
+#### Sintaxe do DELETE
+
+A sintaxe básica do comando `DELETE` é a seguinte:
+
+```sql
+DELETE FROM nome_da_tabela
+WHERE condição;
+```
+
+- `nome_da_tabela`: É o nome da tabela da qual os registros serão deletados.
+- `WHERE condição`: É opcional e especifica quais registros devem ser deletados. Se omitido, todos os registros da tabela serão deletados.
+
+#### Exemplo de Utilização
+
+Vamos usar a tabela `Cliente` como exemplo para deletar um registro específico:
+
+```sql
+DELETE FROM Cliente
+WHERE id = 1;
+```
+
+Neste exemplo:
+- O cliente com `id` igual a `1` será deletado da tabela `Cliente`.
+
+#### Deletando Todos os Registros de uma Tabela
+
+Para deletar todos os registros de uma tabela, simplesmente omita a cláusula `WHERE`:
+
+```sql
+DELETE FROM Cliente;
+```
+
+**Observação:** Tome cuidado ao executar comandos `DELETE` sem uma cláusula `WHERE`, pois isso deletará todos os registros da tabela, o que pode não ser desejado em muitos casos.
 ## ALTER 
 
 ## DROP
