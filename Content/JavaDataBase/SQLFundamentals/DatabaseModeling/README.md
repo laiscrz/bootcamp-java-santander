@@ -223,10 +223,94 @@ DELETE FROM Cliente;
 ```
 
 **Observação:** Tome cuidado ao executar comandos `DELETE` sem uma cláusula `WHERE`, pois isso deletará todos os registros da tabela, o que pode não ser desejado em muitos casos.
-## ALTER 
 
-## DROP
 
+### Comando SQL: DROP
+
+O comando `DROP` é utilizado para remover objetos de um banco de dados, como tabelas, índices, views, ou até mesmo o próprio banco de dados.
+
+#### Sintaxe do DROP
+
+A sintaxe básica do comando `DROP` varia conforme o objeto a ser removido:
+
+1. **Para tabelas:**
+   ```sql
+   DROP TABLE nome_da_tabela;
+   ```
+
+2. **Para índices:**
+   ```sql
+   DROP INDEX nome_do_indice;
+   ```
+
+3. **Para views:**
+   ```sql
+   DROP VIEW nome_da_view;
+   ```
+
+4. **Para o banco de dados inteiro:**
+   ```sql
+   DROP DATABASE nome_do_banco;
+   ```
+
+#### Exemplo de Utilização
+
+Vamos usar um exemplo simples para dropar uma tabela:
+
+```sql
+DROP TABLE Cliente;
+```
+
+Neste caso, a tabela `Cliente` será completamente removida do banco de dados.
+
+**Observação:** Tome cuidado ao usar o comando `DROP`, pois ele remove permanentemente o objeto especificado e todos os dados associados a ele.
+
+### Comando SQL: ALTER
+
+O comando `ALTER` é usado para fazer alterações em estruturas de objetos existentes no banco de dados, como tabelas e colunas.
+
+#### Sintaxe do ALTER
+
+A sintaxe básica do comando `ALTER` varia dependendo da operação que você deseja realizar:
+
+1. **Adicionar uma coluna:**
+   ```sql
+   ALTER TABLE nome_da_tabela
+   ADD nome_da_coluna tipo_de_dado;
+   ```
+
+2. **Modificar uma coluna:**
+   ```sql
+   ALTER TABLE nome_da_tabela
+   ALTER COLUMN nome_da_coluna tipo_de_dado;
+   ```
+
+3. **Remover uma coluna:**
+   ```sql
+   ALTER TABLE nome_da_tabela
+   DROP COLUMN nome_da_coluna;
+   ```
+
+4. **Renomear uma tabela:**
+   ```sql
+   ALTER TABLE nome_da_tabela
+   RENAME TO novo_nome_da_tabela;
+   ```
+
+#### Exemplo de Utilização
+
+Vamos usar um exemplo simples para adicionar uma nova coluna à tabela `Cliente`:
+
+```sql
+ALTER TABLE Cliente
+ADD telefone VARCHAR(20);
+```
+
+Neste exemplo, a coluna `telefone` do tipo `VARCHAR` será adicionada à tabela `Cliente`.
+
+**Observação:** O comando `ALTER` permite ajustar a estrutura de um banco de dados existente sem a necessidade de recriar completamente o objeto.
+
+---
 ## Chaves Primárias (PRIMARY KEY) 🔑
 
 Exemplo de sintaxe para definir uma chave primária:
