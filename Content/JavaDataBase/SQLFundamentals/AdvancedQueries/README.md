@@ -1,6 +1,6 @@
 # Consultas Avançadas 🔍
 
-> Trabalhando com consultas avançadas: junções, subconsultas, funções agregadas e agrupamento de resultados.
+> Trabalhando com consultas avançadas: junções, subconsultas, funções agregadas, agrupamento de resultados, ordenação e índices.
 
 ## Junções (Joins)
 
@@ -103,6 +103,48 @@ FROM empregados
 GROUP BY departamento_id;
 ```
 
+## Ordenação de Resultados (ORDER BY)
+
+A cláusula `ORDER BY` é usada para ordenar o conjunto de resultados de uma consulta SQL por uma ou mais colunas. Pode ser ordenado em ordem crescente (ASC) ou decrescente (DESC).
+
+### Exemplo
+
+```sql
+-- Ordenando clientes por nome em ordem crescente
+SELECT * FROM clientes
+ORDER BY nome ASC;
+
+-- Ordenando pedidos pelo valor total em ordem decrescente
+SELECT * FROM pedidos
+ORDER BY valor_total DESC;
+```
+
+## Índices
+
+Índices são estruturas de dados que melhoram a velocidade das operações de consulta em tabelas. Eles são usados para localizar rapidamente os registros de uma tabela sem ter que fazer uma varredura completa.
+
+### Criação de Índices
+
+```sql
+-- Criando um índice na coluna 'nome' da tabela 'usuarios'
+CREATE INDEX idx_nome ON usuarios (nome);
+
+-- Verificando o plano de execução da consulta antes e depois da criação do índice
+EXPLAIN SELECT * FROM usuarios WHERE nome = "Maria";
+```
+
+### Vantagens dos Índices
+
+1. **Aumento da Velocidade de Consulta**: Reduz o tempo de execução das consultas, especialmente em tabelas grandes.
+2. **Melhoria do Desempenho**: Melhora o desempenho geral do banco de dados, permitindo consultas mais rápidas.
+3. **Manutenção da Integridade**: Ajuda a manter a integridade dos dados através da aplicação de chaves primárias e estrangeiras.
+
+### Considerações ao Usar Índices
+
+1. **Espaço em Disco**: Índices ocupam espaço adicional no disco.
+2. **Performance de Escrita**: Podem diminuir a performance de operações de inserção, atualização e exclusão, pois os índices também precisam ser atualizados.
+3. **Escolha Estratégica**: Deve-se criar índices em colunas que são frequentemente usadas em cláusulas WHERE, JOIN e ORDER BY.
+
 ---
 
-> Este README fornece uma visão geral das consultas avançadas em SQL, cobrindo junções, subconsultas, funções agregadas e agrupamento de resultados. Essas técnicas são essenciais para a manipulação e análise eficazes de dados em bancos de dados relacionais.
+> Este README fornece uma visão abrangente das consultas avançadas em SQL, cobrindo junções, subconsultas, funções agregadas, agrupamento de resultados, ordenação e criação de índices. Essas técnicas são essenciais para a manipulação e análise eficazes de dados em bancos de dados relacionais, otimizando a performance e garantindo consultas mais rápidas e eficientes.
