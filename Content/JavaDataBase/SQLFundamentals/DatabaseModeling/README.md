@@ -22,7 +22,7 @@ CREATE TABLE Cliente (
     email VARCHAR(100) UNIQUE
 );
 ```
---
+---
 
 ### Tipos de Dados
 Veja Abaixo:
@@ -122,7 +122,24 @@ Para ordenar os resultados em ordem ascendente ou descendente, use a cláusula `
 ```sql
 SELECT * FROM Cliente ORDER BY nome ASC;
 ```
+---
+### Operadores SQL utilizados:
 
+| Operador | Descrição                                              | Exemplo                              |
+|----------|--------------------------------------------------------|--------------------------------------|
+| =        | Igual a                                                 | `SELECT * FROM tabela WHERE coluna = valor;` |
+| <>       | Diferente de                                            | `SELECT * FROM tabela WHERE coluna <> valor;` |
+| >        | Maior que                                               | `SELECT * FROM tabela WHERE coluna > valor;` |
+| <        | Menor que                                               | `SELECT * FROM tabela WHERE coluna < valor;` |
+| >=       | Maior ou igual a                                        | `SELECT * FROM tabela WHERE coluna >= valor;` |
+| <=       | Menor ou igual a                                        | `SELECT * FROM tabela WHERE coluna <= valor;` |
+| LIKE     | Comparação de padrões de texto (coringa)                 | `SELECT * FROM tabela WHERE coluna LIKE 'padrão';` |
+| IN       | Verifica se o valor está dentro de um conjunto          | `SELECT * FROM tabela WHERE coluna IN (valor1, valor2);` |
+| BETWEEN  | Verifica se um valor está dentro de um intervalo        | `SELECT * FROM tabela WHERE coluna BETWEEN valor1 AND valor2;` |
+| AND      | Condição que requer que todas as condições sejam verdadeiras | `SELECT * FROM tabela WHERE condição1 AND condição2;` |
+| OR       | Condição que requer que pelo menos uma condição seja verdadeira | `SELECT * FROM tabela WHERE condição1 OR condição2;` |
+
+Esses operadores são fundamentais para criar consultas SQL que filtram e retornam dados de acordo com critérios específicos.
 ---
 
 ### Comando SQL: UPDATE
