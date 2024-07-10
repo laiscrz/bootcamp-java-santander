@@ -11,6 +11,9 @@ A organização do projeto segue uma abordagem simples e intuitiva, com foco na 
 A pasta `Content` contém os materiais de aprendizado do bootcamp, organizados por tópicos:
 - [`JavaBasic/`](Content/JavaBasic): Conteúdo básico de Java.
 - [`JavaPOO/`](Content/JavaPOO): Conteúdo de Java sobre Programação Orientada a Objetos.
+- [`JavaTestsDependencies/`](Content/JavaTestsDependencies): Conteúdo de Java sobre Testes e gerenciamento de dependências.
+- [`JavaDataBase/`](Content/JavaDataBase): Conteúdo de Banco de Dados.
+
 
 ### Desafios (pasta `Challenges`) 📂
 A pasta `Challenges` contém os desafios propostos durante o bootcamp:
