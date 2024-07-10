@@ -3,15 +3,15 @@ package examples;
 import java.time.LocalDate;
 
 public class CadastrarPessoa {
-    private ApiCorreios apiDosCorreios;
+    private ApiCorreios apiCorreios;
 
-    public CadastrarPessoa(final ApiCorreios apiDosCorreios) {
-        this.apiDosCorreios = apiDosCorreios;
+    public CadastrarPessoa(final ApiCorreios apiCorreios) {
+        this.apiCorreios = apiCorreios;
     }
 
     public Pessoa cadastrarPessoa(String nome, String documento, LocalDate nascimento, String cep) {
         Pessoa pessoa = new Pessoa(nome, documento, nascimento);
-        DadosLocalizacao dadosLocalizacao = apiDosCorreios.buscaDadosComBaseNoCep(cep);
+        DadosLocalizacao dadosLocalizacao = apiCorreios.buscaDadosComBaseNoCep(cep);
         pessoa.adicionaDadosDeEndereco(dadosLocalizacao);
         return pessoa;
     }
