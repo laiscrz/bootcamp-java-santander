@@ -313,19 +313,70 @@ Neste exemplo, a coluna `telefone` do tipo `VARCHAR` será adicionada à tabela 
 ---
 ## Chaves Primárias (PRIMARY KEY) 🔑
 
-Exemplo de sintaxe para definir uma chave primária:
+Uma chave primária é um campo ou conjunto de campos que identifica exclusivamente cada registro em uma tabela. Cada tabela pode ter no máximo uma chave primária. As características principais de uma chave primária são:
+
+- **Unicidade**: Cada valor na chave primária deve ser único para identificar exclusivamente cada registro na tabela.
+- **Não Nulidade**: A chave primária não pode conter valores nulos (NULL). Cada registro deve ter um valor na chave primária.
+- **Indexação**: Por padrão, a maioria dos sistemas de gerenciamento de banco de dados (SGBD) cria um índice para a chave primária, o que ajuda na rápida localização de registros.
+
+### Exemplo de Sintaxe para Criar uma Chave Primária
+
+#### Durante a Criação da Tabela:
+
 ```sql
 CREATE TABLE Pedido (
     id INT PRIMARY KEY,
     cliente_id INT,
-    valor DECIMAL(10, 2),
-    FOREIGN KEY (cliente_id) REFERENCES Cliente(id)
+    valor DECIMAL(10, 2)
 );
 ```
 
+Neste exemplo:
+- A tabela `Pedido` é criada com três colunas: `id`, `cliente_id` e `valor`.
+- A coluna `id` é definida como a chave primária usando `PRIMARY KEY`.
+- Isso garante que cada registro na tabela `Pedido` seja identificado exclusivamente pelo valor na coluna `id`.
+
+### Modificar ou Adicionar uma Chave Primária em uma Tabela Existente
+
+#### Modificar uma Tabela Existente para Adicionar Chave Primária:
+
+```sql
+ALTER TABLE Pedido
+ADD PRIMARY KEY (id);
+```
+
+Neste exemplo:
+- A tabela `Pedido` já existe.
+- A chave primária é adicionada à coluna `id` usando `ADD PRIMARY KEY`.
+- Isso define a coluna `id` como a chave primária da tabela `Pedido`.
+
+#### Modificar uma Tabela Existente para Alterar a Chave Primária:
+
+```sql
+ALTER TABLE Pedido
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (id, cliente_id);
+```
+
+Neste exemplo:
+- A chave primária existente é removida usando `DROP PRIMARY KEY`.
+- Uma nova chave primária composta é adicionada às colunas `id` e `cliente_id` usando `ADD PRIMARY KEY`.
+- Isso redefine a chave primária da tabela `Pedido` para usar uma combinação das colunas `id` e `cliente_id`.
+
+### Conclusão
+
+As chaves primárias são essenciais para o design e a integridade dos dados em bancos de dados relacionais. Elas garantem a exclusividade e a identificação única de cada registro em uma tabela. Saber como criar e modificar chaves primárias usando SQL é fundamental para o desenvolvimento e a manutenção de bancos de dados eficientes e bem estruturados.
+
+---
+
 ## Chaves Estrangeiras (FOREIGN KEY) 🔗
 
-Exemplo de sintaxe para definir uma chave estrangeira:
+Uma chave estrangeira é um campo ou conjunto de campos em uma tabela que faz referência à chave primária (ou uma coluna única com índice único) de outra tabela. As chaves estrangeiras são usadas para manter a integridade referencial entre as tabelas. Isso significa que os valores na coluna de chave estrangeira devem existir na coluna de chave primária correspondente na tabela referenciada.
+
+### Exemplo de Sintaxe para Criar uma Chave Estrangeira
+
+#### Durante a Criação da Tabela:
+
 ```sql
 CREATE TABLE ItemPedido (
     id INT PRIMARY KEY,
@@ -336,6 +387,48 @@ CREATE TABLE ItemPedido (
     FOREIGN KEY (produto_id) REFERENCES Produto(id)
 );
 ```
+
+Neste exemplo:
+- A tabela `ItemPedido` é criada com quatro colunas: `id`, `pedido_id`, `produto_id` e `quantidade`.
+- Duas chaves estrangeiras são definidas:
+  - `pedido_id` é uma chave estrangeira que referencia a chave primária `id` na tabela `Pedido`.
+  - `produto_id` é uma chave estrangeira que referencia a chave primária `id` na tabela `Produto`.
+- Isso estabelece uma relação entre a tabela `ItemPedido` e as tabelas `Pedido` e `Produto`.
+
+### Modificar ou Adicionar uma Chave Estrangeira em uma Tabela Existente
+
+#### Modificar uma Tabela Existente para Adicionar Chave Estrangeira:
+
+```sql
+ALTER TABLE ItemPedido
+ADD CONSTRAINT fk_pedido
+FOREIGN KEY (pedido_id) REFERENCES Pedido(id);
+```
+
+Neste exemplo:
+- A tabela `ItemPedido` já existe.
+- Uma nova chave estrangeira é adicionada à coluna `pedido_id` usando `ADD CONSTRAINT` e `FOREIGN KEY`.
+- `fk_pedido` é o nome da restrição de chave estrangeira (opcionalmente fornecido).
+- `REFERENCES Pedido(id)` especifica que a coluna `pedido_id` deve conter valores que existam na coluna `id` da tabela `Pedido`.
+
+#### Modificar uma Tabela Existente para Alterar a Chave Estrangeira:
+
+```sql
+ALTER TABLE ItemPedido
+DROP FOREIGN KEY fk_pedido,
+ADD CONSTRAINT fk_pedido_novo
+FOREIGN KEY (pedido_id) REFERENCES Pedido(id) ON UPDATE CASCADE ON DELETE SET NULL;
+```
+
+Neste exemplo:
+- A chave estrangeira existente (`fk_pedido`) é removida usando `DROP FOREIGN KEY`.
+- Uma nova chave estrangeira (`fk_pedido_novo`) é adicionada à coluna `pedido_id` usando `ADD CONSTRAINT` e `FOREIGN KEY`.
+- `ON UPDATE CASCADE` especifica que se a chave primária na tabela `Pedido` for atualizada, as alterações também serão refletidas na coluna `pedido_id` na tabela `ItemPedido`.
+- `ON DELETE SET NULL` especifica que se a chave primária na tabela `Pedido` for deletada, o valor correspondente na coluna `pedido_id` na tabela `ItemPedido` será definido como NULL.
+
+### Conclusão
+
+As chaves estrangeiras são cruciais para garantir a integridade referencial entre tabelas em um banco de dados relacional. Elas permitem que os dados relacionados sejam vinculados de maneira consistente, evitando inconsistências e mantendo a precisão dos dados ao longo do tempo. Saber como criar e modificar chaves estrangeiras usando SQL é fundamental para o design e a manutenção de bancos de dados eficazes e bem estruturados.
 
 ---
 
