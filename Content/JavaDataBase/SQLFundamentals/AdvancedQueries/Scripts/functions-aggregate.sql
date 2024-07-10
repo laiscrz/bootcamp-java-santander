@@ -1,5 +1,6 @@
 /* FUNÇÃO -> AGREGRADAS*/
 
+-- Conta os usuarios
 SELECT COUNT(*) FROM usuarios;
 
 -- Media da idade dos usuarios
