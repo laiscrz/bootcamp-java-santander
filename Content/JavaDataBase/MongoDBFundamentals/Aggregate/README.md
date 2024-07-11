@@ -25,6 +25,8 @@ Neste exemplo:
 - **$sort**: Ordena os documentos com base no total calculado.
 - **$limit**: Limita o número de documentos retornados.
 
+---
+
 ### Principais Estágios de Agregação
 
 Aqui estão os principais estágios de agregação no MongoDB, com uma breve descrição de cada um:
@@ -38,6 +40,50 @@ Aqui estão os principais estágios de agregação no MongoDB, com uma breve des
 | **$limit**     | Limita o número de documentos de saída.                                                         |
 | **$unwind**    | Deconstrói um array de documentos para um documento por elemento do array.                      |
 | **$addFields** | Adiciona novos campos aos documentos de saída.                                                  |
+
+---
+
+### Funções de Agregação Comuns
+
+Aqui estão algumas funções de agregação comuns utilizadas no MongoDB:
+
+| Função     | Descrição                                                                                       | Exemplo                                    |
+|------------|-------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **$sum**   | Calcula a soma dos valores de um campo específico em todos os documentos do grupo.              | `{ $group: { _id: "$categoria", total: { $sum: "$quantidade" } } }` |
+| **$min**   | Retorna o valor mínimo de um campo específico em todos os documentos do grupo.                  | `{ $group: { _id: "$categoria", menorPreco: { $min: "$preco" } } }` |
+| **$max**   | Retorna o valor máximo de um campo específico em todos os documentos do grupo.                  | `{ $group: { _id: "$categoria", maiorPreco: { $max: "$preco" } } }` |
+| **$avg**   | Calcula a média dos valores de um campo específico em todos os documentos do grupo.             | `{ $group: { _id: "$categoria", mediaPreco: { $avg: "$preco" } } }` |
+| **$count** | Retorna o número de documentos em um estágio de agregação.                                       | `{ $group: { _id: "$categoria", count: { $sum: 1 } } }`           |
+
+---
+
+### Operadores Lógicos
+
+Aqui estão alguns operadores lógicos comuns utilizados no MongoDB:
+
+| Operador   | Descrição                                                                                       | Exemplo                                    |
+|------------|-------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **$and**   | Seleciona documentos que atendem a todas as condições especificadas.                            | `{ $match: { $and: [ { campo1: valor1 }, { campo2: valor2 } ] } }` |
+| **$or**    | Seleciona documentos que atendem a pelo menos uma das condições especificadas.                  | `{ $match: { $or: [ { campo1: valor1 }, { campo2: valor2 } ] } }` |
+| **$not**   | Seleciona documentos que não atendem à condição especificada.                                   | `{ $match: { campo: { $not: { $eq: valor } } } }` |
+| **$nor**   | Seleciona documentos que não atendem a nenhuma das condições especificadas.                     | `{ $match: { $nor: [ { campo1: valor1 }, { campo2: valor2 } ] } }` |
+
+---
+
+### Operadores de Comparação
+
+Aqui estão alguns operadores de comparação comuns utilizados no MongoDB:
+
+| Operador   | Descrição                                                                                       | Exemplo                                    |
+|------------|-------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **$eq**  (=)  | Seleciona documentos em que o valor de um campo é igual ao valor especificado.                   | `{ $match: { campo: { $eq: valor } } }`     |
+| **$ne** (<>)   | Seleciona documentos em que o valor de um campo não é igual ao valor especificado.               | `{ $match: { campo: { $ne: valor } } }`     |
+| **$gt** (>) | Seleciona documentos em que o valor de um campo é maior que o valor especificado.                | `{ $match: { campo: { $gt: valor } } }`     |
+| **$gte** (>=) | Seleciona documentos em que o valor de um campo é maior ou igual ao valor especificado.           | `{ $match: { campo: { $gte: valor } } }`    |
+| **$lt**  (<)  | Seleciona documentos em que o valor de um campo é menor que o valor especificado.                | `{ $match: { campo: { $lt: valor } } }`     |
+| **$lte**  (<=) | Seleciona documentos em que o valor de um campo é menor ou igual ao valor especificado.           | `{ $match: { campo: { $lte: valor } } }`    |
+
+---
 
 ## Exemplos de Uso
 
@@ -66,6 +112,8 @@ db.usuarios.aggregate([
 ]);
 ```
 
+---
+
 ## Considerações Finais
 
 As agregações no MongoDB são poderosas ferramentas para análise de dados complexos e transformações avançadas. Ao utilizar a pipeline de agregação de forma eficiente, é possível obter insights valiosos e processar grandes volumes de dados de maneira eficiente.
@@ -75,3 +123,4 @@ Para mais detalhes sobre os estágios de agregação e operadores disponíveis, 
 ---
 
 Este README fornece uma introdução clara e prática sobre como utilizar as agregações no MongoDB para realizar operações avançadas de processamento e análise de dados.
+
