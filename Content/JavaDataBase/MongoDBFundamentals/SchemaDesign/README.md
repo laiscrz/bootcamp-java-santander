@@ -1,6 +1,6 @@
 # MongoDB: Schema Design e Boas Práticas 📄✨
 
-> **Descrição:** Explore o Schema Design no MongoDB e boas práticas para modelagem de dados eficiente. Compreenda a diferença entre JSON e BSON.
+> **Descrição:** Explore o Schema Design no MongoDB e boas práticas para modelagem de dados eficiente.
 
 ## Schema Design
 
