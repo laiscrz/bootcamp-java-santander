@@ -16,13 +16,33 @@ No MongoDB, o Schema Design refere-se à maneira como você estrutura os dados d
 
 - **Pensando em Escalabilidade**: Planeje para escalabilidade horizontal (sharding) desde o início, se prevê um grande volume de dados ou crescimento rápido.
 
-## Boas Práticas
+---
 
-- **Consistência de Dados**: Use transações multi-documento (disponíveis no MongoDB 4.0+) para garantir a consistência ACID quando necessário.
+## Boas Práticas no MongoDB 🚀🔒🔍
 
-- **Segurança**: Implemente autenticação e autorização robustas. Limite os privilégios de acesso aos documentos e coleções.
+Ao trabalhar com o MongoDB, é essencial seguir boas práticas para garantir desempenho, segurança e manutenibilidade adequados no seu ambiente de banco de dados.
 
-- **Monitoramento e Otimização**: Monitore o desempenho do MongoDB regularmente. Utilize ferramentas como o MongoDB Compass para análise e otimização de consultas.
+### Principais Recomendações:
+
+- **Consistência de Dados**: Utilize transações multi-documento (disponíveis no MongoDB 4.0+) para garantir a consistência ACID quando necessário. Isso é especialmente útil em operações que envolvem atualizações em múltiplos documentos.
+
+- **Segurança**: Implemente autenticação e autorização robustas. Limite os privilégios de acesso aos documentos e coleções usando papéis e usuários do MongoDB. Evite conceder privilégios excessivos.
+
+- **Monitoramento e Otimização**: Monitore regularmente o desempenho do MongoDB usando ferramentas como o MongoDB Compass e `explain()` para analisar e otimizar consultas. Identifique e resolva gargalos de desempenho e ajuste índices conforme necessário.
+
+- **Tamanho dos Documentos**: Evite documentos muito grandes. Grandes documentos podem afetar negativamente o desempenho de consultas e operações de atualização.
+
+- **Nomenclatura de Campos**: Use nomes de campos objetivos e curtos para facilitar a leitura e manutenção do código.
+
+- **Atualizações Eficientes**: Ao atualizar documentos, atualize apenas os campos que foram alterados, em vez de substituir o documento inteiro. Isso reduz a sobrecarga de armazenamento e de rede.
+
+- **Evite Negativas em Queries**: Evite negações em queries sempre que possível. Queries com negações podem ser menos eficientes e exigir mais recursos de processamento.
+
+- **Arrays em Documentos**: Lembre-se de que arrays dentro dos documentos não têm limitações de tamanho. Monitore o crescimento de arrays para evitar impactos negativos no desempenho conforme eles crescem.
+
+>[!NOTE]
+> Essas práticas ajudam a garantir um ambiente MongoDB robusto e eficiente para suas aplicações, promovendo escalabilidade e confiabilidade.
+
 ---
 
 ## Schema Design vs. Referência
