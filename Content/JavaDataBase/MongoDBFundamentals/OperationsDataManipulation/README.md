@@ -63,6 +63,37 @@ Para consultar documentos em uma coleção, utilize o método `find()` com filtr
 db.minhaColecao.find({ nome: "João" });
 ```
 
+**Exemplo de consulta utilizando o operador $in:**
+
+```javascript
+db.minhaColecao.find({ nome: { $in: ["João", "Maria"] } });
+```
+
+### Operadores
+Veja a tabela com alguns dos operadores mais comuns no MongoDB, incluindo sua sintaxe e o que cada um faz:
+
+| Operador    | Sintaxe                                     | Descrição                                                  |
+|-------------|---------------------------------------------|------------------------------------------------------------|
+| `$eq`       | `{ campo: { $eq: valor } }`                  | Documentos onde o campo é igual ao valor especificado.     |
+| `$ne`       | `{ campo: { $ne: valor } }`                  | Documentos onde o campo é diferente do valor especificado. |
+| `$gt`       | `{ campo: { $gt: valor } }`                  | Documentos onde o campo é maior que o valor especificado.  |
+| `$gte`      | `{ campo: { $gte: valor } }`                 | Documentos onde o campo é maior ou igual ao valor especificado. |
+| `$lt`       | `{ campo: { $lt: valor } }`                  | Documentos onde o campo é menor que o valor especificado.   |
+| `$lte`      | `{ campo: { $lte: valor } }`                 | Documentos onde o campo é menor ou igual ao valor especificado. |
+| `$in`       | `{ campo: { $in: [valor1, valor2, ...] } }`   | Documentos onde o campo contém um valor dentro do array especificado. |
+| `$nin`      | `{ campo: { $nin: [valor1, valor2, ...] } }`  | Documentos onde o campo não contém nenhum dos valores do array especificado. |
+| `$and`      | `{ $and: [ { condição1 }, { condição2 } ] }` | Documentos que satisfazem todas as condições especificadas. |
+| `$or`       | `{ $or: [ { condição1 }, { condição2 } ] }`  | Documentos que satisfazem pelo menos uma das condições especificadas. |
+| `$not`      | `{ campo: { $not: { $eq: valor } } }`        | Documentos onde o campo não é igual ao valor especificado. |
+| `$nor`      | `{ $nor: [ { condição1 }, { condição2 } ] }` | Documentos que não satisfazem nenhuma das condições especificadas. |
+| `$exists`   | `{ campo: { $exists: true/false } }`         | Documentos onde o campo existe (true) ou não existe (false). |
+| `$regex`    | `{ campo: { $regex: /padrão/ } }`            | Documentos onde o valor do campo corresponde ao padrão de expressão regular especificado. |
+| `$all`      | `{ campo: { $all: [valor1, valor2, ...] } }`  | Documentos onde o campo contém todos os valores do array especificado. |
+| `$elemMatch`| `{ campo: { $elemMatch: { subcampo: valor } } }` | Documentos onde ao menos um elemento do campo satisfaz a condição especificada. |
+
+> [!NOTE]
+> Esses operadores permitem construir consultas complexas e específicas no MongoDB, adaptando-se às necessidades de busca e manipulação de dados dentro das coleções.
+
 ## 3. Atualização de Dados
 
 Para atualizar documentos existentes, utilize o método `updateOne()` para atualizar um único documento que corresponda ao filtro especificado ou `updateMany()` para atualizar vários documentos.
@@ -76,6 +107,15 @@ db.minhaColecao.updateOne(
 );
 ```
 
+**Exemplo de atualização de vários documentos:**
+
+```javascript
+db.minhaColecao.updateMany(
+    { cidade: "São Paulo" },
+    { $set: { idade: 30 } }
+);
+```
+
 ## 4. Exclusão de Dados
 
 Para excluir documentos de uma coleção, utilize o método `deleteOne()` para excluir um único documento que corresponda ao filtro especificado ou `deleteMany()` para excluir vários documentos.
@@ -84,6 +124,12 @@ Para excluir documentos de uma coleção, utilize o método `deleteOne()` para e
 
 ```javascript
 db.minhaColecao.deleteOne({ nome: "João" });
+```
+
+**Exemplo de exclusão de vários documentos:**
+
+```javascript
+db.minhaColecao.deleteMany({ idade: { $gte: 30 } });
 ```
 
 ## Criação de Coleção com Opções Avançadas
