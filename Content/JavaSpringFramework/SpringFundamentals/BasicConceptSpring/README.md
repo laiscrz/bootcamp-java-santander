@@ -1,4 +1,4 @@
-# Conceitos Básicos - Spring e Criação de Projeto com Spring Initializr 🍃
+# Conceitos Básicos - Spring e Criação de Projeto com Spring Initializr 🌀
 
 > Aprofundando sobre: Fundamentos do Spring Framework.
 
