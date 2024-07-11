@@ -1,4 +1,4 @@
-# Bancos de Dados - NoSQL de Colunas 📊
+# Bancos de Dados - NoSQL de Familia de Colunas 📊
 
 > **Descrição:** Visão detalhada sobre bancos de dados de colunas, suas características, casos de uso e exemplos práticos de sintaxe.
 
