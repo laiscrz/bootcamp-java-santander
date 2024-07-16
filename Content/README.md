@@ -20,11 +20,11 @@ A pasta `Content` está organizado em pastas por assuntos/conteúdo principais d
 
 ### Banco de Dados 📊
 - Introdução aos bancos de dados relacionais com foco em SQL e fundamentos de bancos de dados NoSQL utilizando MongoDB.
-- Acesse à pasta :
+- Acesse à pasta : [Banco de Dados](JavaDatabase)
 
 ### Spring Framework 🌱
 - Desenvolvimento de APIs RESTful com Spring Boot, integração de segurança com Spring Security, padrões de projeto (Design Patterns) e publicação de APIs na nuvem.
-- Acesse à pasta :
+- Acesse à pasta : [Java Spring](JavaSpringFramework)
 
 -------------------------
 > Este README.md serve como guia para explorar e acessar os conteúdos desenvolvidos ao longo do bootcamp, destacando a aplicação prática de cada tema abordado.
