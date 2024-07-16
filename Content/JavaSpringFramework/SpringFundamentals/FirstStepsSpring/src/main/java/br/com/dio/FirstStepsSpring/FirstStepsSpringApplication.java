@@ -5,10 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-// import com.google.gson.Gson;
-
-import br.com.dio.FirstStepsSpring.app.ConversorJson;
-import br.com.dio.FirstStepsSpring.app.ViaCepResponse;
 
 @SpringBootApplication
 public class FirstStepsSpringApplication {
