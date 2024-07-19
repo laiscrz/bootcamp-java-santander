@@ -1,4 +1,4 @@
-package br.com.dio.FirstStepsSpring.app;
+package br.com.dio.project.SpringBeansAutowired.app;
 
 import com.google.gson.Gson;
 import org.springframework.context.annotation.Bean;

@@ -1,13 +1,13 @@
 package br.com.dio.project.SpringBeansAutowired;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 // import com.google.gson.Gson;
 
-import br.com.dio.SpringBeansAutowired.app.ConversorJson;
-import br.com.dio.SpringBeansAutowired.app.ViaCepResponse;
+import br.com.dio.project.SpringBeansAutowired.app.*;
 
 @SpringBootApplication
 public class SpringBeansAutowiredApplication {

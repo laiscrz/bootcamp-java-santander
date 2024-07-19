@@ -1,4 +1,4 @@
-package br.com.dio.FirstStepsSpring.app;
+package br.com.dio.project.SpringBeansAutowired.app;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

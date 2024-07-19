@@ -1,4 +1,4 @@
-package br.com.dio.FirstStepsSpring.app;
+package br.com.dio.project.SpringBeansAutowired.app;
 
 public class ViaCepResponse {
     private String cep;
