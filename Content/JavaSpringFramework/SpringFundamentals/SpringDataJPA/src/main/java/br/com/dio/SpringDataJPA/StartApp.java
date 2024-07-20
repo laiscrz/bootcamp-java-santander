@@ -1,5 +1,7 @@
 package br.com.dio.SpringDataJPA;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -25,7 +27,7 @@ public class StartApp implements CommandLineRunner{
         user.setName("Maria");
         user.setUsername("mari_02");
         user.setPassword("1234");
-        
+
         repository.save(user);
 
         for(User u: repository.findAll()){
