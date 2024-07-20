@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.dio.SpringWebAPI.model.Usuario;
-import br.com.dio.SpringWebAPI.repository.IUsuarioRepository;
+import br.com.dio.SpringWebAPI.repository.UsuarioRepository;
 
 @RestController
 public class UsuarioController {
     @Autowired
-    private IUsuarioRepository repository;
+    private UsuarioRepository repository;
 
     @PostMapping("/usuarios")
     public void post(@RequestBody Usuario usuario) {
@@ -26,21 +26,21 @@ public class UsuarioController {
 
     @PutMapping("/usuarios")
     public void put(@RequestBody Usuario usuario) {
-        repository.update(usuario);
+        repository.save(usuario);;
     }
 
     @GetMapping("/usuarios")
     public List<Usuario> getAll() {
-        return repository.listAll();
+        return repository.findAll();
     }
 
     @GetMapping("/usuario/{id}")
-    public Usuario getOne(@PathVariable("id") Integer id) {
-        return repository.finById(id);
+    public Usuario getOne(@PathVariable("id") Integer id){
+        return repository.findById(id);
     }
 
     @DeleteMapping("/usuarios/{id}")
     public void delete(@PathVariable("id") Integer id) {
-        repository.remove(id);
+        repository.deleteById(id);;
     }
 }

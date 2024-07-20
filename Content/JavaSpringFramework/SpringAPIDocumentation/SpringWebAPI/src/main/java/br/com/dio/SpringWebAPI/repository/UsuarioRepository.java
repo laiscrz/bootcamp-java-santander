@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class IUsuarioRepository {
+public class UsuarioRepository {
     public void save(Usuario usuario){
         if(usuario.getId()==null)
           System.out.println("SAVE - Recebendo o usuário na camada de repositório");
