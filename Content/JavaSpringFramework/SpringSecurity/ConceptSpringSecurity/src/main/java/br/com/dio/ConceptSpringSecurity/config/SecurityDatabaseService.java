@@ -13,6 +13,7 @@ import br.com.dio.ConceptSpringSecurity.repository.IUserRepository;
 
 import java.util.HashSet;
 import java.util.Set;
+
 @Service
 public class SecurityDatabaseService implements UserDetailsService {
     @Autowired
