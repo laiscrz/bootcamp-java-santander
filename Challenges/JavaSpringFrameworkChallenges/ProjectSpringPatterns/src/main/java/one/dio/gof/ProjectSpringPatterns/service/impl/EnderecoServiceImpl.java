@@ -4,17 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import one.dio.gof.ProjectSpringPatterns.model.Endereco;
-import one.dio.gof.ProjectSpringPatterns.repository.IEnderecoRepository;
 import one.dio.gof.ProjectSpringPatterns.service.EnderecoService;
 import one.dio.gof.ProjectSpringPatterns.service.ViaCepService;
 
 @Service
-public class EnderecoServiceImpl implements EnderecoService{
- @Autowired
-    private ViaCepService viaCepService;
-
+public class EnderecoServiceImpl implements EnderecoService {
     @Autowired
-    private IEnderecoRepository enderecoRepository;
+    private ViaCepService viaCepService;
 
     /**
      * Busca o endereço pelo CEP utilizando o cliente Feign.
@@ -26,12 +22,4 @@ public class EnderecoServiceImpl implements EnderecoService{
         return viaCepService.consultarCep(cep);
     }
 
-    /**
-     * Busca todos os endereços armazenados no banco de dados.
-     * 
-     * @return Uma lista de todos os endereços.
-     */
-    public Iterable<Endereco> buscarTodosEnderecos() {
-        return enderecoRepository.findAll();
-    }
 }
