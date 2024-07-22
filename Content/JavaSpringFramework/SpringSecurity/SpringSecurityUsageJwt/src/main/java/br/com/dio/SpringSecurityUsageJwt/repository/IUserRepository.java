@@ -1,0 +1,14 @@
+package br.com.dio.SpringSecurityUsageJwt.repository;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import br.com.dio.SpringSecurityUsageJwt.model.User;
+
+public interface IUserRepository {
+
+    @Query("SELECT e FROM User e JOIN FETCH e.roles WHERE e.username= (:username)")
+    public User findByUsername(@Param("username") String username);
+
+    boolean existsByUsername(String username);
+}
