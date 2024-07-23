@@ -23,7 +23,7 @@ Esta pasta contém desafios de projetos relacionados ao uso de bancos de dados e
 
 ### Desafios de Projeto - Spring Framework 🌱
 Esta pasta contém desafios de projetos utilizando o Spring Framework. Os projetos abrangem temas como injeção de dependência, criação de APIs RESTful, e configuração de segurança.
-- Acesse a pasta: [Spring Framework - Challenges](SpringFrameworkChallenges)
+- Acesse a pasta: [Spring Framework - Challenges](JavaSpringFrameworkChallenges)
   
 -------------------------
 > Este README.md serve como guia para explorar e acessar os desafios desenvolvidos ao longo do bootcamp, destacando a aplicação prática de cada tema abordado.
