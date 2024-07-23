@@ -13,12 +13,14 @@ A pasta `Content` contém os materiais de aprendizado do bootcamp, organizados p
 - [`JavaPOO/`](Content/JavaPOO): Conteúdo de Java sobre Programação Orientada a Objetos.
 - [`JavaTestsDependencies/`](Content/JavaTestsDependencies): Conteúdo de Java sobre Testes e gerenciamento de dependências.
 - [`JavaDataBase/`](Content/JavaDataBase): Conteúdo de Banco de Dados.
+- [`JavaSpringFramework/`](Content/JavaSpringFramework): Conteúdo de Java com Spring Framework.
 
 
 ### Desafios (pasta `Challenges`) 📂
 A pasta `Challenges` contém os desafios propostos durante o bootcamp:
 - [`JavaBasicChallenges/`](Challenges/JavaBasicChallenges): Desafios sobre básico de Java.
 - [`JavaPOOChallenges/`](Challenges/JavaPOOChallenges): Desafios sobre Programação Orientada a Objetos em Java.
+- [`JavaSpringFrameworkChallenges/`](Challenges/JavaSpringFrameworkChallenges): Desafios sobre Java com Spring Framework.
 
 ## 💻 Tecnologias
 
