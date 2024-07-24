@@ -4,6 +4,10 @@
 
 Este repositório contém os projetos e desafios realizados durante o Bootcamp Java Santander & DIO. O bootcamp é uma iniciativa educacional focada no aprendizado prático e teórico da linguagem de programação Java, abrangendo diversos tópicos desde fundamentos até desenvolvimento avançado com frameworks.
 
+## 📄 Certificado
+
+Para acessar o meu certificado do bootcamp, clique [aqui](https://www.dio.me/certificate/M9IN5XXT/share).
+
 ## Estrutura do Repositório 🗂️
 A organização do projeto segue uma abordagem simples e intuitiva, com foco na clareza e na facilidade de navegação. O repositório está organizado em pastas principais. Abaixo está a estrutura detalhada:
 
@@ -56,4 +60,5 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 
 ----------------------------
-> Este repositório tem como objetivo documentar os projetos desenvolvidos durante o bootcamp para o qual fui selecionada, em parceria com o Santander. Durante o curso, explorarei uma ampla gama de atividades para aprofundar meus conhecimentos em Java e suas aplicações, abrangendo desde conceitos fundamentais até técnicas avançadas com frameworks.atividades para aprofundar meus conhecimentos em Java e suas aplicações.
+> Este repositório tem como objetivo documentar os projetos desenvolvidos durante o bootcamp para o qual fui selecionada, em parceria com o Santander. Durante o curso, explorarei uma ampla gama de atividades para aprofundar meus conhecimentos em Java e suas aplicações, abrangendo desde conceitos fundamentais até técnicas avançadas com frameworks.
+
