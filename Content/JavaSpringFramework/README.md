@@ -8,17 +8,17 @@ Este documento fornece uma visão geral dos conceitos e práticas essenciais do 
 
 ## Conteúdo do Módulo: Ganhando Produtividade no Java com Spring Framework 📚
 
-### **1. Fundamentos do Spring 🏗️**
+### **1. Fundamentos do Spring 🌟**
 
 - **Descrição:** Introdução aos conceitos básicos do Spring, incluindo beans versus components, escopos (Singleton e Prototype), propriedades e valores, ORM, JPA, e conexão com banco de dados. 
 - **Acesse em:** [Pasta 'SpringFundamentals'](SpringFundamentals)
 
-### **2. Criando uma API REST Documentada com Spring Web e Swagger 🏗️**
+### **2. Criando uma API REST Documentada com Spring Web e Swagger 📄**
 
 - **Descrição:** Desenvolvimento de uma API REST utilizando Spring Web, com ênfase em Controllers, Swagger para documentação e tratamento de exceções.
 - **Acesse em:** [Pasta 'SpringAPIDocumentation'](SpringAPIDocumentation)
 
-### **3. Spring Security 🏗️**
+### **3. Spring Security 🔒**
 
 - **Descrição:** Implementação de segurança em uma API REST usando Spring Security, com foco em autenticação e autorização.
 - **Acesse em:** [Pasta 'SpringSecurity'](SpringSecurity)
